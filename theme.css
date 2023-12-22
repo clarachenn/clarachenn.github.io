@@ -4,6 +4,7 @@ body {
 }
 
 .container {
+    box-sizing: border-box;
     width: 80%;
     margin: 0 auto;
 }
@@ -69,3 +70,41 @@ li a:hover {
     font-size: 16pt;
     color: #99b49a;
 }
+ 
+.project-container {
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+ }
+
+.project-panel {
+    width: 40%;
+    background-color: #92a48e;
+    padding: 150px;
+    margin: 40px 25px;
+    border: 10px solid rgb(199, 217, 191);
+    border-radius: 50px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+ }
+
+.project-panel:hover {
+    border: 10px solid #c6d8be;
+    border-radius: 60px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+.project-panel h2 {
+    font-size: 20pt;
+    color: #333;
+    margin: 0;
+ }
+
+.project-panel h4 {
+    font-size: 18pt;
+    color: #333;
+}
+ 
