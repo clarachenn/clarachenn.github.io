@@ -21,12 +21,6 @@ h4 {
     font-size: 20pt;
 }
 
-p {
-    font-size: 20pt;
-    background-color: antiquewhite;
-    padding: 10px;
-    border: solid rgb(201, 150, 144);
-}
 
 div {
     padding: 20px;
@@ -73,38 +67,47 @@ li a:hover {
  
 .project-container {
     box-sizing: border-box;
-    margin: 0;
     display: flex;
-    justify-content: space-between;
- }
+    width: 100%;
+    justify-content: space-around;
+}
 
 .project-panel {
-    width: 40%;
     background-color: #92a48e;
-    padding: 150px;
-    margin: 40px 25px;
+    height: 360px;
+    padding: 40px;
+    margin: 30px 20px;
     border: 10px solid rgb(199, 217, 191);
     border-radius: 50px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
- }
+    flex: 0 0 calc(33.3333% - 100px);
+    text-decoration: none;
+}
 
 .project-panel:hover {
-    border: 10px solid #c6d8be;
     border-radius: 60px;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+    background-color: #5d7a63;
 }
 
 .project-panel h2 {
+    font-family: sans-serif;
     font-size: 20pt;
-    color: #333;
-    margin: 0;
- }
-
-.project-panel h4 {
-    font-size: 18pt;
-    color: #333;
+    color: #2a302b;
+    text-align: center;
 }
+
+.project-panel p {
+    font-family: sans-serif;
+    word-wrap: break-word;
+    white-space: normal;
+    font-size: 16pt;
+    color: #2a302b;
+}
+
+.project-panel:hover h2,
+.project-panel:hover p {
+    color: rgb(232, 233, 232);
+}
+
  
