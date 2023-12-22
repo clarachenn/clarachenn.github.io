@@ -99,7 +99,7 @@ li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('zotrater.png');
+    background-image: url('https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/zotrater.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -114,7 +114,7 @@ li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('cornmaze.png');
+    background-image: url('https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/cornmaze.png');
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0; 
