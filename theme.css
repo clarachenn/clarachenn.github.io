@@ -1,6 +1,18 @@
 body {
-    background-color: rgb(42, 69, 48);
+    background: radial-gradient(circle, rgb(38, 68, 45), #503f4a);
+    /* background-color: rgb(42, 69, 48); */
     margin: 0;
+    background-size: 200% 200%;
+    animation: gradientMove 13s linear infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 200% 200%;
+    }
 }
 
 .container {
@@ -16,11 +28,23 @@ h1 {
     color: rgb(175, 208, 189);
 }
 
-h4 {
-    color: white;
+h2 {
+    font-family: sans-serif;
+    color: rgb(175, 208, 189);
+    font-size: 28pt;
+}
+
+h3 {
+    font-family: sans-serif;
+    color: rgb(175, 208, 189);
     font-size: 20pt;
 }
 
+h4 {
+    font-family: sans-serif;
+    color: rgb(175, 208, 189);
+    font-size: 18pt;
+}
 
 div {
     padding: 20px;
@@ -74,7 +98,8 @@ li a:hover {
 
 .project-panel {
     position: relative;
-    background-color: #92a48e;
+    /* background-color: #92a48e; */
+    background-color: #45644e55;
     height: 360px;
     padding: 40px;
     margin: 0px 20px;
@@ -128,7 +153,7 @@ li a:hover {
 .project-panel h2 {
     font-family: sans-serif;
     font-size: 20pt;
-    color: #2a302b;
+    color: #b9e3c0;
     text-align: center;
 }
 
@@ -137,12 +162,16 @@ li a:hover {
     word-wrap: break-word;
     white-space: normal;
     font-size: 16pt;
-    color: #2a302b;
+    color: #b9e3c0;
 }
 
-.project-panel:hover h2,
+.project-panel:hover h2 {
+    color: rgb(226, 248, 226);
+    font-size: 30px;
+}
+
 .project-panel:hover p {
-    color: rgb(232, 233, 232);
+    color: rgb(226, 248, 226);
 }
 
  
