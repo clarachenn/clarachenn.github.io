@@ -73,21 +73,56 @@ li a:hover {
 }
 
 .project-panel {
+    position: relative;
     background-color: #92a48e;
     height: 360px;
     padding: 40px;
-    margin: 30px 20px;
+    margin: 0px 20px;
     border: 10px solid rgb(199, 217, 191);
     border-radius: 50px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
     flex: 0 0 calc(33.3333% - 100px);
     text-decoration: none;
+    overflow: hidden;
 }
 
 .project-panel:hover {
     border-radius: 60px;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
-    background-color: #5d7a63;
+    background-color: #5d7a63; 
+}
+
+.project-panel:nth-child(1)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('zotrater.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0; 
+    transition: opacity 0.4s ease;  
+}
+
+.project-panel:nth-child(3)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('cornmaze.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0; 
+    transition: opacity 0.4s ease;  
+}
+
+.project-panel:hover::before {
+    opacity: 0.12; 
 }
 
 .project-panel h2 {
