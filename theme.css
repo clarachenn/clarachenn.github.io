@@ -37,29 +37,26 @@ ul {
     font-family: sans-serif;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 20px;
+    text-align: center;
     overflow: hidden;
 }
 
 li {
     font-family: sans-serif;
-    float: left;
-    width: 170px;
-    border-right: 0.5px solid #d2cbcb;
+    display: inline-block;
+    margin-right: 10px;
 }
 
 li a {
     font-family: sans-serif;
+    line-height: 30px;
+    font-size: 13pt;
     display: block;
     text-align: center;
     color: white;
     text-decoration: none;
-    padding: 14px 16px;
     width: 140px;
-}
-
-li:last-child {
-    border-right: none;
 }
 
 li a.active {
@@ -69,5 +66,6 @@ li a.active {
 
 li a:hover {
     font-family: cursive;
+    font-size: 16pt;
     color: #99b49a;
 }
