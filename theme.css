@@ -17,36 +17,36 @@ body {
 
 .container {
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     width: 80%;
     margin: 0 auto;
     text-align: center;
 }
 
 h1 {
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 100pt;
     text-align: center;
     color: rgb(175, 208, 189);
 }
 
 h2 {
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     color: rgb(196, 213, 203);
-    font-size: 28pt;
+    font-size: 26pt;
     text-align: center;
 
 }
 
 h3 {
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     color: rgb(196, 213, 203);
     font-size: 20pt;
  
 }
 
 h4 {
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     color: rgb(196, 213, 203);
     font-size: 18pt;
 }
@@ -58,7 +58,7 @@ div {
 }
 
 ul {
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     list-style-type: none;
     margin: 0;
     padding: 20px;
@@ -67,13 +67,13 @@ ul {
 }
 
 li {
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     display: inline-block;
     margin-right: 10px;
 }
 
 li a {
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 30px;
     font-size: 13pt;
     display: block;
@@ -84,7 +84,7 @@ li a {
 }
 
 li a.active {
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     color: #99b49a;
 }
 
@@ -129,7 +129,7 @@ li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/zotrater.png');
+    background-image: url("https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/zotrater.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -144,7 +144,7 @@ li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/cornmaze.png');
+    background-image: url("https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/cornmaze.png");
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0; 
@@ -156,14 +156,14 @@ li a:hover {
 }
 
 .project-panel h2 {
-    font-family: sans-serif;
-    font-size: 20pt;
+    font-family: Arial, sans-serif;
+        font-size: 20pt;
     color: #b9e3c0;
     text-align: center;
 }
 
 .project-panel p {
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     word-wrap: break-word;
     white-space: normal;
     font-size: 16pt;
@@ -184,7 +184,7 @@ li a:hover {
     background-color: #1b37238b;
     border-radius: 50px;
     width: 100%;
-    height: 760px;
+    height: auto;
     padding: 30px;
     margin: 60px 0;
     justify-content: space-around;
@@ -194,7 +194,7 @@ li a:hover {
 .education-panel {
     border-radius: 50px;
     width: 90%;
-    height: 200px;
+    height: auto;
     padding: 30px;
     margin: 20px;
     background-color: #9ebc9738;
@@ -208,10 +208,10 @@ li a:hover {
     margin-bottom: 4px;
 }
 
-.education-panel h5 {
+.education-panel p {
     color: rgb(196, 213, 203);
     margin: 50px;
-    margin-top: 30px;
+    margin-top: 16px;
     margin-bottom: 0px;
     font-size: 15pt;
 }
@@ -219,7 +219,190 @@ li a:hover {
 .education-panel h6 {
     color: rgb(196, 213, 203);
     font-size: 12pt;
+    font-style: italic;
     margin:0;
 }
  
+.experience-container {
+    box-sizing: border-box;
+    background-color: #4b5e5057;
+    border-radius: 50px;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    margin: 60px 0;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.experience-panel {
+    border-radius: 50px;
+    width: 90%;
+    height: auto;
+    padding: 30px;
+    margin: 20px;
+    background-color: #29352d52;
+    text-align: left;
+}
+
+.experience-panel h4 {
+    color: rgb(196, 213, 203);
+    font-size: 18pt;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.experience-panel h6 {
+    color: rgb(196, 213, 203);
+    font-size: 12pt;
+    font-style: italic;
+    margin:0;
+}
+
+.experience-panel p {
+    color: rgb(196, 213, 203);
+    margin: 50px;
+    margin-top: 16px;
+    margin-bottom: 0px;
+    font-size: 15pt;
+}
+
+.experience-logo {
+    float: right;
+    margin-top: -10px; 
+    margin-right: 20px; 
+}
+
+.experience-logo img {
+    width: 80px; 
+    height: auto; 
+}
+
+.ec-container {
+    box-sizing: border-box;
+    background-color: #1c2f2187;
+    border-radius: 50px;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    margin: 60px 0;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.ec-panel {
+    border-radius: 50px;
+    width: 90%;
+    height: auto;
+    background-color: #81968852;
+    display: flex;
+    align-items: center;
+}
+
+.ec-text {
+    padding-right: 10px;
+    width: 50%;
+    text-align: left;
+}
+
+.ec-image {
+    padding: 5px;
+    width: 38%;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.ec-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(24, 24, 24, 0.812);
+    cursor: pointer;
+}
+
+.ec-text h4 {
+    color: rgb(196, 213, 203);
+    font-size: 18pt;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.ec-text p {
+    color: rgb(196, 213, 203);
+    font-size: 15pt;
+}
+
+.tkdPopup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.tkdPopup-content {
+    display: none;
+    background-color: #3b503e;
+    opacity: 0.95;
+    width: 50%;
+    height: 60%;
+    padding-top: 100px;
+    border-radius: 20px;
+}
+
+.tkdPopup-close {
+    margin-top: -100px;
+    float: right;
+    cursor: pointer;
+    font-size: 60px;
+    color: #fbe7e7b0;
+}
  
+#tkd-gallery {
+    width: 90%;
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+#tkd-gallery img {
+    display: block;  
+    margin: auto; 
+    width: 85%;
+    border: 6px solid rgba(255, 255, 255, 0.884);
+}
+
+
+.prev, .next {
+    position: absolute;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: rgba(10, 31, 15, 0.5);
+    border: none;
+    border-radius: 5px;
+}
+
+.prev {
+    left: -30px;
+    top: 180px;
+}
+
+.prev:hover, 
+.next:hover {
+    background-color:rgba(168, 177, 163, 0.394);
+    color: rgb(10, 31, 15);
+}
+
+.next {
+    right: -30px;
+    top: 180px;
+}

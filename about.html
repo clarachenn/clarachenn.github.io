@@ -1,6 +1,6 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,22 +42,130 @@
                 <div class="education-panel">
                     <h4>University of California, Irvine</h4>
                     <h6>Bachelor's  Degree      |     2022 - Present</h6>
-                    <h5>Major: Computer Science</h5>
-                    <h5>Activities: ICS Student Council (AAA Committee Member), Hack at UCI, 
-                        VenusHacks (Corporate Committee Member), Lab Tutor, Learning Assistant, Taekwondo Club</h5>
+                    <p>Major: Computer Science</p>
+                    <p>Activities: ICS Student Council (AAA Committee Member), Hack at UCI, 
+                        VenusHacks (Corporate Committee Member), Lab Tutor, Learning Assistant, Taekwondo Club</p>
                 </div>
 
                 <div class="education-panel">
                     <h4>Lord Byng Secondary School</h4>
                     <h6>High School Degree      |       2017 - 2022</h6>
-                    <h5>Activities: Peer Counselor, Girls Will Stay (Vice President), 
-                        Penpal Program, Yearbook (Staff Lead), Swim Team, Ski & Snowboard Team</h5>
-                    <h5>Awards: Award for Academics (2022), Principal's List (2017-2022)</h5>
+                    <p>Activities: Peer Counselor, Girls Will Stay (Vice President), 
+                        Penpal Program, Yearbook (Staff Lead), Swim Team, Ski & Snowboard Team</p>
+                    <p>Awards: Award for Academics (2022), Principal's List (2017-2022)</p>
                 </div>
             </div>
-                
+
+            <div class="experience-container">
+                <h2>Experience</h2>
+                <div class="experience-panel">
+
+                    <div class="experience-logo">
+                        <img src="tkd1.jpg">
+                    </div>
+
+                    <h4>Computer Science Learning Assistant</h4>
+                    <h6>UC Irvine Donald Bren School of Information and Computer Sciences</h6>
+                    <h6>Sept 2023 - Present</h6>
+                    <p>- Explained complex computer science topics, including the Python Data Model, recursion, asymptotic analysis, functional programming, and databases, to intermediate programming students.</p>
+                    <p>- Collaborated with students in debugging sessions, addressing and resolving programming challenges together.</p>
+                    <p>- Taught students how to write effective unit tests for their programs, providing them with a practical skill for program validation and improvement.</p>
+                    <p>- Guided students in using Git for committing code, emphasizing the importance of version control in maintaining code integrity.</p>
+                </div>
+
+                <div class="experience-panel">
+                    <h4>Academic and Alumni Affairs Committee Member</h4>
+                    <h6>UCI ICS Student Council</h6>
+                    <h6>Sep 2022 - Present</h6>
+                    <p>- Actively organized and coordinated UCI events for faculty, alumni, and undergraduates, securing guest speakers, 
+                        managing event logistics, and boosting alumni engagement, resulting in an increase in alumni contributions.</p>
+                    <p>- Collaborated to enhance ICS events, creating a dynamic environment for networking, socializing, and learning.</p>
+                </div>
+
+                <div class="experience-panel">
+                    <h4>Computer Science Lab Tutor</h4>
+                    <h6>UC Irvine Donald Bren School of Information and Computer Sciences</h6>
+                    <h6>Apr 2023 - Jun 2023</h6>
+                    <p>- Guided beginner students through the fundamental principles of programming.</p>
+                    <p>- Collaborated closely with the course professor to enhance the course content and structure, thereby improving the overall learning experience.</p>
+                    <p>- Offered personalized assistance, clarified intricate concepts, and instilled essential debugging skills.</p>
+                    <p>- Facilitated lab exams, ensuring fair and organized assessment procedures, resulting in a high student success rate.</p>
+                </div>
+
+            </div>
+
+            <div class="ec-container"> 
+                <h2>Extracurriculars</h2>
+                <div class="ec-panel">
+                     
+                    <div class="ec-text">
+                        <h4>Taekwondo</h4>
+                        <p>As a member of the Taekwondo Club at UCI, I actively participate in and attend 
+                            practices, engaging in training sessions to continually improve my skills in 
+                            Taekwondo. My journey in Taekwondo began in the 5th grade, and it has since 
+                            evolved into one of my greatest passions. Having achieved a 2nd dan black 
+                            belt, I participated in numerous competitions and previously served as an 
+                            assistant instructor. I thoroughly enjoy the challenges and camaraderie that 
+                            come with this martial art, making it a fulfilling part of my life.</p>
+                    </div>
+                    <div class="ec-image">
+                        <img src="tkd1.jpg" width=100% onclick="openPopup()" alt="Taekwondo image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="tkdPopup" id="imagePopup">
+                <div class="tkdPopup-content" id="popupContent">
+                    <span class="tkdPopup-close" onclick="closePopup()">&times;</span>
+                    <div id="tkd-gallery">
+                        <img src="tkd1.jpg" width="600" alt="Taekwondo image">
+                        <img src="tkd2.jpg" width="600" alt="Taekwondo image">
+                        <img src="tkd3.jpg" width="600" alt="Taekwondo image">
+                        <img src="tkd4.jpg" width="600" alt="Taekwondo image">
+                        <button class="prev" onclick="prevTkdImage()">❮</button>
+                        <button class="next" onclick="nextTkdImage()">❯</button>
+                    </div>
+                </div>
+            </div>
         </div>
  
+
+        <script>
+            var currentTkdImage = 0;
+            var TkdImages = document.querySelectorAll("#tkd-gallery img");
+
+            function openPopup() {
+                document.getElementById("imagePopup").style.display = "flex";
+                document.getElementById("popupContent").style.display = "block";
+                showTkdSlide(currentTkdImage)
+            }
+    
+            function closePopup() {
+                document.getElementById("imagePopup").style.display = "none";
+                document.getElementById("popupContent").style.display = "none";
+            }
+
+            function showTkdSlide(index) {
+                TkdImages.forEach((img, i) => {
+                    if (i === index) {
+                        img.style.display = "block";
+                    } else {
+                        img.style.display = "none";
+                    }
+                });
+            }
+
+            function prevTkdImage() {
+                currentTkdImage = (currentTkdImage - 1 + TkdImages.length) % TkdImages.length;
+                showTkdSlide(currentTkdImage);
+            }
+
+            function nextTkdImage() {
+                currentTkdImage = (currentTkdImage + 1) % TkdImages.length;
+                showTkdSlide(currentTkdImage);
+            }
+
+        </script>
     </body>
 
 </html>
