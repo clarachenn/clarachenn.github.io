@@ -223,6 +223,31 @@ li a:hover {
     margin:0;
 }
  
+
+.uci-logo {
+    float: right;
+    margin-top: -20px; 
+    margin-right: 0px; 
+}
+
+.uci-logo img {
+    width: 60px; 
+    height: auto; 
+    opacity: .6;
+ }
+
+ .lbss-logo {
+    float: right;
+    margin-top: -20px; 
+    margin-right: -10px; 
+}
+
+.lbss-logo img {
+    width: 40px; 
+    height: auto; 
+    opacity: .6;
+ }
+
 .experience-container {
     box-sizing: border-box;
     background-color: #4b5e5057;
@@ -267,16 +292,29 @@ li a:hover {
     font-size: 15pt;
 }
 
-.experience-logo {
+.dbh-logo {
     float: right;
-    margin-top: -10px; 
+    margin-top: -20px; 
+    margin-right: 0px; 
+}
+
+.dbh-logo img {
+    width: 60px; 
+    height: auto; 
+    opacity: .6;
+ }
+
+ .isccs-logo {
+    float: right;
+    margin-top: -40px; 
     margin-right: 20px; 
 }
 
-.experience-logo img {
+.isccs-logo img {
     width: 80px; 
     height: auto; 
-}
+    opacity: .8;
+ }
 
 .ec-container {
     box-sizing: border-box;
