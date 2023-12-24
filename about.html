@@ -117,33 +117,85 @@
             <div class="ec-container"> 
                 <h2>Extracurriculars</h2>
                 <div class="ec-panel">
-                     
                     <div class="ec-text">
                         <h4>Taekwondo</h4>
                         <p>As a member of the Taekwondo Club at UCI, I actively participate in and attend 
                             practices, engaging in training sessions to continually improve my skills in 
-                            Taekwondo. My journey in Taekwondo began in the 5th grade, and it has since 
+                            Taekwondo. My journey in Taekwondo began in the 4th grade, and it has since 
                             evolved into one of my greatest passions. Having achieved a 2nd dan black 
                             belt, I participated in numerous competitions and previously served as an 
                             assistant instructor. I thoroughly enjoy the challenges and camaraderie that 
                             come with this martial art, making it a fulfilling part of my life.</p>
                     </div>
                     <div class="ec-image">
-                        <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/tkd1.jpg" width=100% onclick="openPopup()" alt="Taekwondo image">
+                        <img src="tkd1.jpg" width=100% onclick="openPopup()" alt="Taekwondo Image">
                     </div>
                 </div>
-            </div>
 
-            <div class="tkdPopup" id="imagePopup">
-                <div class="tkdPopup-content" id="popupContent">
-                    <span class="tkdPopup-close" onclick="closePopup()">&times;</span>
-                    <div id="tkd-gallery">
-                        <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/tkd1.jpg" width="600" alt="Taekwondo image 1">
-                        <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/tkd2.jpg" width="600" alt="Taekwondo image 2">
-                        <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/tkd3.jpg" width="600" alt="Taekwondo image 3">
-                        <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/tkd4.jpg" width="600" alt="Taekwondo image 4">
-                        <button class="prev" onclick="prevTkdImage()">❮</button>
-                        <button class="next" onclick="nextTkdImage()">❯</button>
+                <div class="popup" id="imagePopup">
+                    <div class="popup-content" id="popupContent">
+                        <span class="popup-close" onclick="closePopup()">&times;</span>
+                        <div id="tkd-gallery">
+                            <img src="tkd1.jpg" width="600" alt="Taekwondo Kicking 1">
+                            <img src="tkd2.jpg" width="600" alt="Taekwondo Kicking 2">
+                            <img src="tkd3.jpg" width="600" alt="Taekwondo Image">
+                            <img src="tkd4.jpg" width="600" alt="Taekwondo Competition">
+                            <img src="tkd5.jpg" width="600" alt="Taekwondo Competition Team">
+                            <img src="tkd6.jpg" width="600" alt="Taekwondo UCI 1">
+                            <img src="tkd7.jpg" width="600" alt="Taekwondo UCI 2">
+
+                            <button class="prev" onclick="prevTkdImage()">❮</button>
+                            <button class="next" onclick="nextTkdImage()">❯</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ec-panel">
+                    <div class="ec-image">
+                        <img src="VH1.jpg" width=100% onclick="openVHPopup()" alt="VenusHacks Image">
+                    </div>
+                    <div class="ec-text">
+                        <h4>Hack at UCI</h4>
+                        <p>I am a committed member of the Hack at UCI club, actively engaging in hackathons where 
+                            I apply my accumulated experience and knowledge to innovate and strategize for hack 
+                            projects. My enthusiasm for participating in hackathons stems from the collaborative 
+                            nature of the process, fostering a strong sense of team spirit. I find genuine joy 
+                            in working with fellow members, collectively brainstorming and devising creative 
+                            solutions to current challenges.</p>
+                    </div>
+                </div>
+
+                <div class="popup" id="VHImagePopup">
+                    <div class="popup-content" id="VHPopupContent">
+                        <span class="popup-close" onclick="closeVHPopup()">&times;</span>
+                        <div id="vh-gallery">
+                            <img src="VH1.JPG" width="600" alt="VenusHacks Image 1">
+                            <img src="VH2.JPG" width="600" alt="VenusHacks Image 2">
+                            <img src="VH3.JPG" width="600" alt="VenusHacks Image 3">
+                            <img src="VH4.JPG" width="600" alt="VenusHacks Image 4">
+                            <img src="VH5.JPG" width="600" alt="VenusHacks Team Picture">
+                            <button class="prev" onclick="prevVHImage()">❮</button>
+                            <button class="next" onclick="nextVHImage()">❯</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ec-panel">
+                    <div class="ec-text">
+                        <h4>Vancouver Gavel Club</h4>
+                        <p>Public speaking is a hobby in which I am profoundly passionate, and my commitment is exemplified 
+                            through my involvement in the Vancouver Toastmasters Gavel Club. Within this dynamic community, 
+                            I have not only improved my own public speaking skills but also contributed significantly to the 
+                            growth and enrichment of the club.</p>
+                        <p>I played a pivotal role in driving a remarkable 200% increase 
+                            in club membership, elevating our community from 30 to over 100 active members. Recognizing the 
+                            need for inclusivity and vibrancy, I successfully expanded the club from a single chapter to 
+                            three, fostering a more diverse and dynamic environment. Collaborating closely with the club 
+                            coordinator and fellow executive members, we worked as a team to enhance the overall public 
+                            speaking experience for all members.</p>
+                    </div>
+                    <div class="ec-image">
+                        <img src="tm.jpg" width=100% alt="Gavel Club Image">
                     </div>
                 </div>
             </div>
@@ -153,13 +205,16 @@
         <script>
             var currentTkdImage = 0;
             var TkdImages = document.querySelectorAll("#tkd-gallery img");
+            
+            var currentVHImage = 0;
+            var VHImages = document.querySelectorAll("#vh-gallery img");
 
             function openPopup() {
                 document.getElementById("imagePopup").style.display = "flex";
                 document.getElementById("popupContent").style.display = "block";
                 showTkdSlide(currentTkdImage)
             }
-    
+            
             function closePopup() {
                 document.getElementById("imagePopup").style.display = "none";
                 document.getElementById("popupContent").style.display = "none";
@@ -185,6 +240,36 @@
                 showTkdSlide(currentTkdImage);
             }
 
+            function openVHPopup() {
+                document.getElementById("VHImagePopup").style.display = "flex";
+                document.getElementById("VHPopupContent").style.display = "block";
+                showVHSlide(currentVHImage)
+            }
+            
+            function closeVHPopup() {
+                document.getElementById("VHImagePopup").style.display = "none";
+                document.getElementById("VHPopupContent").style.display = "none";
+            }
+
+            function showVHSlide(index) {
+                VHImages.forEach((img, i) => {
+                    if (i === index) {
+                        img.style.display = "block";
+                    } else {
+                        img.style.display = "none";
+                    }
+                });
+            }
+
+            function prevVHImage() {
+                currentVHImage = (currentVHImage - 1 + VHImages.length) % VHImages.length;
+                showVHSlide(currentVHImage);
+            }
+
+            function nextVHImage() {
+                currentVHImage = (currentVHImage + 1) % VHImages.length;
+                showVHSlide(currentVHImage);
+            }
         </script>
     </body>
 

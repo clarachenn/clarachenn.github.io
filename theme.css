@@ -332,6 +332,8 @@ li a:hover {
     border-radius: 50px;
     width: 90%;
     height: auto;
+    padding: 30px;
+    margin: 20px;
     background-color: #81968852;
     display: flex;
     align-items: center;
@@ -369,7 +371,7 @@ li a:hover {
     font-size: 15pt;
 }
 
-.tkdPopup {
+.popup {
     display: none;
     position: fixed;
     top: 0;
@@ -381,7 +383,7 @@ li a:hover {
     align-items: center;
 }
 
-.tkdPopup-content {
+.popup-content {
     display: none;
     background-color: #3b503e;
     opacity: 0.95;
@@ -391,7 +393,7 @@ li a:hover {
     border-radius: 20px;
 }
 
-.tkdPopup-close {
+.popup-close {
     margin-top: -100px;
     float: right;
     cursor: pointer;
@@ -416,6 +418,22 @@ li a:hover {
     border: 6px solid rgba(255, 255, 255, 0.884);
 }
 
+#vh-gallery {
+    width: 90%;
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+#vh-gallery img {
+    display: block;  
+    margin: auto; 
+    width: 85%;
+    border: 6px solid rgba(255, 255, 255, 0.884);
+}
 
 .prev, .next {
     position: absolute;
