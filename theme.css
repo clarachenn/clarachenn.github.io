@@ -1,5 +1,7 @@
 body {
     background: radial-gradient(circle, rgb(38, 68, 45), #503f4a);
+    background: radial-gradient(circle, rgb(38, 68, 45), #393a5e);
+
     /* background-color: rgb(42, 69, 48); */
     margin: 0;
     background-size: 200% 200%;
