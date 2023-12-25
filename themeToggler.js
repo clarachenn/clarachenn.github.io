@@ -6,11 +6,11 @@ function toggleTheme() {
     if (lightStylesheet.disabled) {
         lightStylesheet.disabled = false;
         darkStylesheet.disabled = true;
-        themeButton.innerHTML = '<img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/sun.png" alt="Light Theme">';
+        themeButton.innerHTML = '<img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/themes/sun.png" alt="Light Theme">';
     } else {
         lightStylesheet.disabled = true;
         darkStylesheet.disabled = false;
-        themeButton.innerHTML = '<img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/moon.png" alt="Dark Theme">';
+        themeButton.innerHTML = '<img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/themes/moon.png" alt="Dark Theme">';
     }
 
     localStorage.setItem("theme", lightStylesheet.disabled ? "dark" : "light");
@@ -22,10 +22,10 @@ document.addEventListener("DOMContentLoaded", function() {
     if (savedTheme === "light") {
         document.getElementById("lightStylesheet").disabled = false;
         document.getElementById("darkStylesheet").disabled = true;
-        themeButton.innerHTML = '<img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/sun.png" alt="Light Theme">';
+        themeButton.innerHTML = '<img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/themes/sun.png" alt="Light Theme">';
     } else {
         document.getElementById("lightStylesheet").disabled = true;
         document.getElementById("darkStylesheet").disabled = false;
-        themeButton.innerHTML = '<img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/moon.png" alt="Light Theme">';
+        themeButton.innerHTML = '<img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/themes/moon.png" alt="Light Theme">';
     }
 });
