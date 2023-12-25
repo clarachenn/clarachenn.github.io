@@ -12,4 +12,20 @@ function toggleTheme() {
         darkStylesheet.disabled = false;
         themeButton.innerHTML = '<img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/moon.png" alt="Dark Theme">';
     }
+
+    localStorage.setItem("theme", lightStylesheet.disabled ? "dark" : "light");
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    var savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "light") {
+        document.getElementById("lightStylesheet").disabled = false;
+        document.getElementById("darkStylesheet").disabled = true;
+        themeButton.innerHTML = '<img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/sun.png" alt="Light Theme">';
+    } else {
+        document.getElementById("lightStylesheet").disabled = true;
+        document.getElementById("darkStylesheet").disabled = false;
+        themeButton.innerHTML = '<img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/moon.png" alt="Light Theme">';
+    }
+});
