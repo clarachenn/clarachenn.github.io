@@ -131,7 +131,7 @@ li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/zotrater.png");
+    background-image: url("https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/zotrater.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -146,7 +146,7 @@ li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/cornmaze.png");
+    background-image: url("https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/cornmaze.png");
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0; 
@@ -159,7 +159,7 @@ li a:hover {
 
 .project-panel h2 {
     font-family: Arial, sans-serif;
-        font-size: 20pt;
+    font-size: 20pt;
     color: #b9e3c0;
     text-align: center;
 }
@@ -238,7 +238,7 @@ li a:hover {
     opacity: .6;
  }
 
- .lbss-logo {
+.lbss-logo {
     float: right;
     margin-top: -20px; 
     margin-right: -10px; 
@@ -306,16 +306,16 @@ li a:hover {
     opacity: .6;
  }
 
- .isccs-logo {
+.icssc-logo {
     float: right;
     margin-top: -40px; 
     margin-right: 20px; 
 }
 
-.isccs-logo img {
+.icssc-logo img {
     width: 80px; 
     height: auto; 
-    opacity: .8;
+    opacity: .6;
  }
 
 .ec-container {
@@ -399,7 +399,7 @@ li a:hover {
     margin-top: -100px;
     float: right;
     cursor: pointer;
-    font-size: 60px;
+    font-size: 70px;
     color: #fbe7e7b0;
 }
  
@@ -442,7 +442,7 @@ li a:hover {
     padding: 16px;
     color: white;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 36px;
     cursor: pointer;
     background-color: rgba(10, 31, 15, 0.5);
     border: none;
@@ -463,4 +463,18 @@ li a:hover {
 .next {
     right: -30px;
     top: 180px;
+}
+
+#themeButton {
+    border: none;
+    background: none;
+    cursor: pointer;
+    top: 18px;
+    right: 18px;
+    position: fixed;
+}
+
+#themeButton img {
+    width: 50px;
+    height: auto;
 }

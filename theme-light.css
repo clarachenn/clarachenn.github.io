@@ -1,0 +1,136 @@
+body {
+    background: radial-gradient(circle, rgb(184, 228, 238), #f0d19f);
+    margin: 0;
+    background-size: 200% 200%;
+    animation: gradientMove 13s linear infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 200% 200%;
+    }
+}
+
+h1 {
+    color: rgba(4, 36, 105, 0.773);
+}
+
+h2, h3, h4 {
+    color: rgb(58, 79, 126);
+}
+
+li a {
+    color: rgb(78, 107, 169);
+}
+
+li a.active {
+    color: rgb(43, 65, 112);
+    font-style: oblique;
+}
+
+li a:hover {
+    color: rgba(13, 41, 102, 0.747);
+}
+ 
+.project-panel {
+    background-color: #8dcbdc58;
+    border: 10px solid rgba(129, 196, 218, 0.587);
+
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.project-panel:hover {
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+    background-color: #bbe3f1;
+    background-color: #8ecae0be;
+
+}
+
+.project-panel h2,
+.project-panel p {
+    color: rgba(13, 41, 102, 0.747);
+}
+
+.project-panel:hover h2, 
+.project-panel:hover p {
+    color: rgba(20, 41, 85, 0.747);
+}
+
+.education-container {
+    background-color: #a4c4cb9e;
+}
+
+.education-panel {
+    background-color: #56a1c638;
+}
+
+.education-panel h4, 
+.education-panel p, 
+.education-panel h6 {
+    color: rgb(58, 79, 126);
+}
+
+.experience-container {
+    background-color: #e1b73b3d;
+}
+
+.experience-panel {
+    background-color: #e4ae182b;
+}
+
+.experience-panel h4, 
+.experience-panel h6, 
+.experience-panel p {
+    color: rgb(58, 79, 126);
+}
+
+.ec-container {
+    background-color: #39b8d534;
+}
+
+.ec-panel {
+    background-color: #108da322;
+}
+
+.ec-image:hover {
+    box-shadow: 0 0 30px rgba(24, 24, 24, 0.812);
+}
+
+.ec-text h4, 
+.ec-text p {
+    color: rgb(58, 79, 126);
+}
+
+.popup {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    background-color: #78a6c9f3;
+}
+
+.popup-close {
+    color: #284584b0;
+}
+
+#tkd-gallery img {
+    border: 6px solid rgba(255, 255, 255, 0.884);
+}
+
+#vh-gallery img {
+    border: 6px solid rgba(255, 255, 255, 0.884);
+}
+
+.prev, .next {
+    color: #204593c5;
+    background-color: rgba(211, 241, 248, 0.454);
+}
+
+.prev:hover, 
+.next:hover {
+    background-color: #20449384;
+    color: rgb(208, 232, 245);
+}

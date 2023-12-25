@@ -6,6 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About</title>
         <link rel="stylesheet" type="text/css" href="theme.css">
+
+        <link rel="stylesheet" type="text/css" href="theme-light.css" id="lightStylesheet">
+        <link rel="stylesheet" type="text/css" href="theme-dark.css" disabled id="darkStylesheet">
+        <script src="themeToggler.js"></script>
     </head>
 
     <body>
@@ -17,17 +21,19 @@
                     <li><a href="projects.html">projects</a></li>
                     <li><a href="contact.html">contact</a></li>
 
+                    <button id="themeButton" onclick="toggleTheme()">
+                        <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/sun.png" alt="Light Theme">
+                    </button>
                 </ul>
             </nav>
-        
             <h1>about me</h1>
             <h2>Hello, I am Clara!</h2>
             <h4>I am a second-year Computer Science student at the University of California, Irvine. 
                 My journey in software development began in 9th grade, and since then, I have 
                 cultivated a passion for all things related to technology. I am proficient in 
-                languages such as Python, Java, C++, HTML, and CSS. As I progress through my studies, 
-                I am eager to explore advanced topics, engage in meaningful projects, and continue my 
-                growth in the dynamic field of computer science.</h4>
+                languages such as Python, Java, C++, JavaScript, HTML, and CSS. As I progress through my 
+                studies, I am eager to explore advanced topics, engage in meaningful projects, and 
+                continue my growth in the dynamic field of computer science.</h4>
 
             <h4>In addition to my academic pursuits, I actively engage in a diverse range of 
                 extracurricular activities both on and off campus. I serve as a dedicated Academic 
@@ -85,7 +91,7 @@
 
                 <div class="experience-panel">
 
-                    <div class="isccs-logo">
+                    <div class="icssc-logo">
                         <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/logos/icssc.png">
                     </div>
 
