@@ -478,3 +478,17 @@ li a:hover {
     width: 50px;
     height: auto;
 }
+
+#githubButton {
+    border: none;
+    background: none;
+    cursor: pointer;
+    bottom: 18px;
+    left: 18px;
+    position: fixed;
+}
+
+#githubButton img {
+    width: 50px;
+    height: auto;
+}
