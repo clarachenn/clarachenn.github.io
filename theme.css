@@ -488,7 +488,17 @@ li a:hover {
     position: fixed;
 }
 
-#githubButton img {
+#linkedinButton {
+    border: none;
+    background: none;
+    cursor: pointer;
+    bottom: 88px;
+    left: 18px;
+    position: fixed;
+}
+
+#githubButton img,
+#linkedinButton img {
     width: 50px;
     height: auto;
 }
