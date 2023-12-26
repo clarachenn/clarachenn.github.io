@@ -471,7 +471,7 @@ li a:hover {
     cursor: pointer;
     top: 18px;
     right: 18px;
-    position: fixed;
+    position: absolute;
 }
 
 #themeButton img {
@@ -511,4 +511,13 @@ li a:hover {
 #emailButton img {
     width: 40px;
     height: auto;
+}
+
+.contact-container {
+    width: 600px;
+
+}
+
+.contact-container name {
+    width: 300px;;
 }
