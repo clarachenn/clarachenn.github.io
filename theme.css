@@ -492,13 +492,23 @@ li a:hover {
     border: none;
     background: none;
     cursor: pointer;
-    bottom: 88px;
+    bottom: 78px;
+    left: 18px;
+    position: fixed;
+}
+
+#emailButton {
+    border: none;
+    background: none;
+    cursor: pointer;
+    bottom: 138px;
     left: 18px;
     position: fixed;
 }
 
 #githubButton img,
-#linkedinButton img {
-    width: 50px;
+#linkedinButton img,
+#emailButton img {
+    width: 40px;
     height: auto;
 }
