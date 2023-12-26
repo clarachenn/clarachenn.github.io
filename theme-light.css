@@ -134,3 +134,16 @@ li a:hover {
     background-color: #20449384;
     color: rgb(208, 232, 245);
 }
+
+.contact-container {
+    background-color: #86c9ca5e;
+}
+
+.contact-container a {
+    color: rgb(78, 107, 169);
+}
+ 
+.contact-container a:hover {
+    color: rgba(13, 41, 102, 0.747);
+}
+
