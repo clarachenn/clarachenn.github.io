@@ -97,25 +97,34 @@ li a:hover {
 }
  
 .project-container {
+    width: 100%;
     box-sizing: border-box;
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;  
     justify-content: space-around;
+
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .project-panel {
     position: relative;
     /* background-color: #92a48e; */
     background-color: #45644e55;
-    height: 360px;
+    height: auto;
     padding: 40px;
-    margin: 0px 20px;
     border: 10px solid rgb(199, 217, 191);
     border-radius: 50px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-    flex: 0 0 calc(33.3333% - 100px);
+    flex: 0 0 calc(40% - 20px);
+    margin-bottom: 40px;  
     text-decoration: none;
     overflow: hidden;
+    background-size: cover; 
+    background-position: center;  
+
 }
 
 .project-panel:hover {
@@ -124,14 +133,13 @@ li a:hover {
     background-color: #5d7a63; 
 }
 
-.project-panel:nth-child(1)::before {
+.project-panel::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/zotrater.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -139,18 +147,20 @@ li a:hover {
     transition: opacity 0.4s ease;  
 }
 
+.project-panel:nth-child(1)::before {
+    background-image: url("https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/zotrater.png");
+}
+
+.project-panel:nth-child(2)::before {
+    background-image: url("personal.png");
+}
+
 .project-panel:nth-child(3)::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/cornmaze.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0; 
-    transition: opacity 0.4s ease;  
+    background-image: url("mv.png");
+}
+
+.project-panel:nth-child(4)::before {
+    background-image: url("corn-maze.png");
 }
 
 .project-panel:hover::before {
@@ -180,6 +190,7 @@ li a:hover {
 .project-panel:hover p {
     color: rgb(226, 248, 226);
 }
+
 
 .education-container {
     box-sizing: border-box;
