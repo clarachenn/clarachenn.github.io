@@ -35,7 +35,7 @@ li a:hover {
 
 .project-panel:hover {
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
-    background-color: #5d7a63; 
+    background-color: #0e2e15; 
 }
 
 .project-panel h2, 
@@ -152,7 +152,7 @@ li a:hover {
 }
 
 #aboutMeButton:hover {
-    border: 5px solid rgba(149, 196, 225, 0.632);
+    border: 5px solid rgba(193, 250, 203, 0.52);
 }
 
 #aboutMeButton h3 {
@@ -161,4 +161,25 @@ li a:hover {
 
 #aboutMeButton:hover h3 {
     background-color: rgba(45, 115, 70, 0.714);
+}
+
+.project-panel2 {
+    background-color: #45644e55;
+    border: 8px solid rgb(199, 217, 191);
+}
+
+.project-panel2:hover {
+    background-color: #5d7a63; 
+}
+
+.index-container h1 {
+    color: rgb(175, 208, 189);
+}
+
+.index-container h1 a {
+    color: rgb(115, 193, 135);
+}
+
+.index-container h1 a:hover {
+    color: rgb(86, 146, 101);
 }

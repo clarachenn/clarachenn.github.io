@@ -1,6 +1,7 @@
 body {
     background: radial-gradient(circle, rgb(38, 68, 45), #503f4a);
     background: radial-gradient(circle, rgb(184, 228, 238), #f0d19f);
+    background: linear-gradient(to bottom, #124b2e, #3a244e);
 
     /* background-color: rgb(42, 69, 48); */
     margin: 0;
@@ -132,19 +133,19 @@ li a:hover {
     border: 10px solid rgb(199, 217, 191);
     border-radius: 50px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-    flex: 0 0 calc(40% - 20px);
+    flex: 0 0 calc(38% - 10px);
     margin-bottom: 40px;  
     text-decoration: none;
     overflow: hidden;
     background-size: cover; 
     background-position: center;  
-
 }
 
 .project-panel:hover {
     border-radius: 60px;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
     background-color: #5d7a63; 
+    transform: scale(1.03);
 }
 
 .project-panel::before {
@@ -650,7 +651,7 @@ opacity: 0.3;
     animation: gradientMove 13s linear infinite;
     border: 10px solid rgba(101, 116, 151, 0.46);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-    opacity: 0.99;
+    opacity: 0.9;
     border-radius: 20px;
     margin-right: 200px;
     padding: auto;
@@ -687,4 +688,48 @@ opacity: 0.3;
 #aboutMeButton:hover h3 {
     background-color: rgb(163, 216, 235);
     transform: scale(1.05);
+}
+
+.index-container {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.index-container h1 {
+    font-size: 50px;
+}
+
+.project-container-vertical {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-around;
+}
+
+.project-panel2 {
+    position: relative;
+    background-color: #45644e55;
+    height: auto;
+    padding: 10px 0;
+    border: 8px solid rgb(199, 217, 191);
+    border-radius: 40px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    flex: 0 0 calc(26%);
+    margin-bottom: 40px;  
+    text-decoration: none;
+}
+
+.project-panel2:hover {
+    border-radius: 20px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+    background-color: #5d7a63; 
+    transform: scale(1.05);
+}
+
+.project-panel2 a.active {
+    color: rgb(58, 79, 126);
 }
