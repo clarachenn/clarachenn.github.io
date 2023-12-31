@@ -1,4 +1,5 @@
 body {
+    background: radial-gradient(circle, #ccb1dd, #a3ccb9);
     background: radial-gradient(circle, rgb(184, 228, 238), #f0d19f);
     margin: 0;
     background-size: 200% 200%;
@@ -147,3 +148,30 @@ li a:hover {
     color: rgba(13, 41, 102, 0.747);
 }
 
+.index-panel {
+    background-image: url("index-light.jpg");
+}
+
+.index-about-panel {
+    background-color: rgb(169, 190, 200);
+    background: radial-gradient(circle, rgb(139, 205, 220), #f2c69b);
+    border: 10px solid rgba(101, 116, 151, 0.46);
+    opacity: 0.9;
+}
+
+#aboutMeButton {
+    border: 5px solid rgba(68, 93, 150, 0.46);   
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+#aboutMeButton:hover {
+    border: 5px solid rgba(68, 93, 150, 0.46); 
+}
+
+#aboutMeButton h3 {
+    background-color: rgba(255, 196, 0, 0.433);
+}
+
+#aboutMeButton:hover h3 {
+    background-color: rgb(163, 216, 235);
+}

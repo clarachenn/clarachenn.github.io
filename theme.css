@@ -1,6 +1,6 @@
 body {
     background: radial-gradient(circle, rgb(38, 68, 45), #503f4a);
-    background: radial-gradient(circle, rgb(38, 68, 45), #393a5e);
+    background: radial-gradient(circle, rgb(184, 228, 238), #f0d19f);
 
     /* background-color: rgb(42, 69, 48); */
     margin: 0;
@@ -30,7 +30,21 @@ h1 {
     font-size: 100pt;
     text-align: center;
     color: rgb(175, 208, 189);
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
 }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 h2 {
     font-family: Arial, sans-serif;
@@ -394,6 +408,8 @@ li a:hover {
     background-color: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
+    animation: fadeIn 0.5s ease-in-out;
+
 }
 
 .popup-content {
@@ -404,7 +420,18 @@ li a:hover {
     height: 60%;
     padding-top: 100px;
     border-radius: 20px;
+    animation: fadeIn 0.5s ease-in-out;
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 
 .popup-close {
     margin-top: -100px;
@@ -554,3 +581,110 @@ li a:hover {
     color: #d5f6d6;
 }
   
+
+.contact-container {
+    opacity: 0;
+    animation: fadeInLeft 1s forwards;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+ 
+ 
+.index-panel {
+    position: relative;
+    background-image: url("index-light.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    margin: 0;
+    margin-top: 140px;
+    padding: 0;
+}
+
+/* .index-panel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(233, 203, 164);  
+    opacity: 0.3;   
+} */
+
+/* 4
+    background-color: rgb(44, 57, 49);  
+    opacity: 0.3;   
+*/
+
+/* 3 
+background-color: rgb(209, 246, 249);  
+opacity: 0.4;   
+*/
+
+/* 
+10
+background-color: rgb(233, 203, 164);  
+opacity: 0.3;   
+*/
+
+
+.index-about-panel {
+    background-color: rgb(169, 190, 200);
+    background: radial-gradient(circle, rgb(139, 205, 220), #f2c69b);
+    animation: gradientMove 13s linear infinite;
+    border: 10px solid rgba(101, 116, 151, 0.46);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    opacity: 0.99;
+    border-radius: 20px;
+    margin-right: 200px;
+    padding: auto;
+    width: 20%;
+    height: 50%;
+}
+
+#aboutMeButton {
+    display: inline-block; 
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 5px solid rgba(68, 93, 150, 0.46);   
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+#aboutMeButton:hover {
+    transform: scale(1.08);
+    transition: background-color 0.2s; 
+    border: 5px solid rgba(68, 93, 150, 0.46); 
+}
+
+#aboutMeButton h3 {
+    margin: 0; 
+    padding: 20px; 
+    background-color: rgba(255, 196, 0, 0.433);
+    transition: background-color 0.2s; 
+}
+
+#aboutMeButton:hover h3 {
+    background-color: rgb(163, 216, 235);
+    transform: scale(1.05);
+}

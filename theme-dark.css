@@ -1,8 +1,9 @@
 body {
-    background: radial-gradient(circle, rgb(38, 68, 45), #393a5e);
+    background: radial-gradient(circle, #062359e9, #074023ed);
+    background: linear-gradient(to bottom, #124b2e, #3a244e);
+
     margin: 0;
-    background-size: 200% 200%;
-    animation: gradientMove 13s linear infinite;
+    background-size: 100% 100%;
 }
 
 h1 {
@@ -133,4 +134,31 @@ li a:hover {
  
 .contact-container a:hover {
     color: #d5f6d6;
+}
+
+.index-panel {
+    background-image: url("index-dark.jpg");
+}
+
+.index-about-panel {
+    background: radial-gradient(circle, #164a10, #3e4e78);
+    border: 10px solid rgba(193, 250, 203, 0.52);
+    opacity: 0.92;
+}
+
+#aboutMeButton {
+    border: 5px solid rgba(193, 250, 203, 0.52);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+#aboutMeButton:hover {
+    border: 5px solid rgba(149, 196, 225, 0.632);
+}
+
+#aboutMeButton h3 {
+    background-color: rgba(47, 83, 142, 0.714);
+}
+
+#aboutMeButton:hover h3 {
+    background-color: rgba(45, 115, 70, 0.714);
 }
