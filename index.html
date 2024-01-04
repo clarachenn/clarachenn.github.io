@@ -25,10 +25,16 @@
             <button id="themeButton" onclick="toggleTheme()">
                 <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/themes/sun.png" alt="Light Theme">
             </button>
-        
+
             <h1>clara chen</h1>
-            <h3>Welcome to my personal website!</h3>
+            
             <h2>I am a...</h2>
+            
+            <div class="typewriter-container">
+                <h4><span id="animated-text"></span></h4> 
+            </div>
+    
+    
                 
         </div>
 
@@ -72,6 +78,39 @@
         <a id="emailButton" href="mailto:clarachenn1@gmail.com">
             <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/contact-buttons/email-light.png" alt="Email Logo">
         </a>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const dynamicText = document.getElementById("animated-text");
+                const words = ["developer", "learner", "designer", "creator", "problem solver"];  
+                let wordIndex = 0;
+                let letterIndex = 0;
+          
+                function type() {
+                    if (letterIndex < words[wordIndex].length) {
+                    dynamicText.textContent += words[wordIndex].charAt(letterIndex);
+                    letterIndex++;
+                    setTimeout(type, 100);  
+                    } else {
+                    setTimeout(erase, 1000);  
+                    }
+                }
+            
+                function erase() {
+                    if (letterIndex > 0) {
+                    dynamicText.textContent = words[wordIndex].substring(0, letterIndex - 1);
+                    letterIndex--;
+                    setTimeout(erase, 50);  
+                    } else {
+                    wordIndex = (wordIndex + 1) % words.length;
+                    setTimeout(type, 500);  
+                    }
+                }
+            
+                type();  
+            });
+          </script>
+          
     </body>
 
 </html>

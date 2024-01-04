@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-    color: rgb(175, 208, 189);
+    color: #afd0bd;
 }
 
 h2, h3, h4 {
@@ -182,4 +182,8 @@ li a:hover {
 
 .index-container h1 a:hover {
     color: rgb(86, 146, 101);
+}
+
+#animated-text {
+    border-right: 2px solid #afd0bd;
 }
