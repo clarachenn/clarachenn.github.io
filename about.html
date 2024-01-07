@@ -221,7 +221,27 @@
         </a>
 
         <script src="popupHandler.js"></script>
- 
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const panels = document.querySelectorAll(".education-panel, .experience-panel, .ec-panel");
+                
+                function checkVisibility() {
+                    panels.forEach(panel => {
+                        const panelTop = panel.getBoundingClientRect().top;
+                        const windowHeight = window.innerHeight;
+
+                        if (panelTop < windowHeight * 0.75) {
+                            panel.classList.add("slide-in");
+                        } else {
+                            panel.classList.remove("slide-in");
+                        }
+                    });
+                }
+
+                window.addEventListener("scroll", checkVisibility);
+            });
+
+        </script>
     </body>
 
 </html>

@@ -50,21 +50,30 @@
 
         <div class="index-container">
             <h1>check out some of my <a href="projects.html">projects</a></h1>
-
             <div class="project-container-vertical">
                 <a href="https://github.com/clarachenn/ZotRater" class="project-panel2">
+                    <img src="images/zotrater.png" width="300px" alt="ZotRater Image">
                     <h2>ZotRater</h2>
+
                 </a>
 
                 <a href="http://mainviewcpa.com" class="project-panel2">
+                    <img src="images/mv.png" width="300px" alt="Mainview Image">
                     <h2>Mainview Website</h2>
+
                 </a>
 
                 <a href="https://github.com/clarachenn/corn-maze-3d-game" class="project-panel2">
+                    <img src="images/cornmaze.png" width="300px" alt="CornMaze Image">
                     <h2>CornMaze</h2>
                 </a>
             </div>
         </div>
+
+        <h1>check out some of my <a href="projects.html">projects</a></h1>
+
+
+        <h1>check out some of my <a href="projects.html">projects</a></h1>
 
 
         <a id="githubButton" href="https://github.com/clarachenn">
@@ -109,6 +118,42 @@
             
                 type();  
             });
+
+            document.addEventListener("DOMContentLoaded", function () {
+                const projectPanels = document.querySelectorAll(".project-panel2");
+                const indexPanel = document.querySelector(".index-about-panel");  
+                const indexContainer = document.querySelector(".index-container");  
+
+                function checkVisibility() {
+                    projectPanels.forEach(panel => {
+                        const panelTop = panel.getBoundingClientRect().top;
+                        const windowHeight = window.innerHeight;
+
+                        if (panelTop < windowHeight * 0.75) {
+                            panel.classList.add("slide-in");
+                        } else {
+                            panel.classList.remove("slide-in");
+                        }
+                    });
+
+                    const indexPanelTop = indexPanel.getBoundingClientRect().top;
+                    const indexContainerTop = indexContainer.getBoundingClientRect().top;
+
+                    if (indexPanelTop < window.innerHeight * 0.75) {
+                        indexPanel.style.opacity = 1;
+                    } else {
+                        indexPanel.style.opacity = 0;
+                    }
+
+                    if (indexContainerTop < window.innerHeight * 0.75) {
+                        indexContainer.style.transform = "translateX(0)";
+                    } else {
+                        indexContainer.style.transform = "translateX(-100%)";
+                    }
+                }
+                window.addEventListener("scroll", checkVisibility);
+            });
+
           </script>
           
     </body>
