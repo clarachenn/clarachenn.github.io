@@ -68,7 +68,7 @@ li a:hover {
 
 .education-panel h4, 
 .education-panel p, 
-.education-panel h6 {
+.education-panel h5 {
     color: rgb(58, 79, 126);
 }
 
@@ -81,7 +81,7 @@ li a:hover {
 }
 
 .experience-panel h4, 
-.experience-panel h6, 
+.experience-panel h5, 
 .experience-panel p {
     color: rgb(58, 79, 126);
 }
