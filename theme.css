@@ -495,7 +495,7 @@ li a:hover {
     font-weight: bold;
     font-size: 36px;
     cursor: pointer;
-    background-color: rgba(10, 31, 15, 0.5);
+    color: #204593c5;
     border: none;
     border-radius: 5px;
 }
@@ -507,8 +507,8 @@ li a:hover {
 
 .prev:hover, 
 .next:hover {
-    background-color:rgba(168, 177, 163, 0.394);
-    color: rgb(10, 31, 15);
+    background-color: #20449384;
+    color: rgb(208, 232, 245);
 }
 
 .next {
@@ -573,7 +573,7 @@ li a:hover {
 
 .contact-container {
     box-sizing: border-box;
-    background-color: #75c68c57;
+    background-color: #86c9ca5e;
     border-radius: 50px;
     width: auto;
     height: auto;
@@ -585,13 +585,13 @@ li a:hover {
     font-family: Arial, sans-serif;
     line-height: 30px;
     font-size: 16pt;
-    color: white;
+    color: rgb(78, 107, 169);
     text-decoration: none;
 }
  
 .contact-container a:hover {
     font-family: cursive;
-    color: #d5f6d6;
+    color: rgba(13, 41, 102, 0.747);
 }
   
 
@@ -659,8 +659,8 @@ opacity: 0.3;
 .index-about-panel {
     background-color: rgb(169, 190, 200);
     background: radial-gradient(circle, rgb(139, 205, 220), #f2c69b);
-    animation: gradientMove 13s linear infinite;
     border: 10px solid rgba(101, 116, 151, 0.46);
+    animation: gradientMove 13s linear infinite;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
     opacity: 0.9;
     border-radius: 20px;
@@ -682,7 +682,6 @@ opacity: 0.3;
     overflow: hidden;
     border: 5px solid rgba(68, 93, 150, 0.46);   
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-
 }
 
 #aboutMeButton:hover {
@@ -731,7 +730,6 @@ opacity: 0.3;
 
 .project-panel2 {
     position: relative;
-    background-color: #45644e55;
     height: auto;
     padding: 30px 0;
     border-radius: 40px;
@@ -742,19 +740,22 @@ opacity: 0.3;
     transition: opacity 0.5s ease-in-out;  
     overflow: hidden;
     align-items: center;
+    background-color: #8dcbdc58;
+    border: 8px solid rgba(129, 196, 218, 0.587);
+    color: rgb(58, 79, 126);
 }
 
 .project-panel2 img {
     width: 90%;
     height: auto;
     transition: transform 0.5s ease-in-out;
-    border: 4px solid #c4d5cb;
+    border: 4px solid #3a4f7e80;
 }
 
 .project-panel2:hover {
     border-radius: 20px;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
-    background-color: #5d7a63; 
+    background-color: #8ecae0be;
     transform: scale(1.05);
 }
 
@@ -763,7 +764,7 @@ opacity: 0.3;
 }
 
 .project-panel2:hover img {
-    border: 6px solid #c4d5cb;
+    border: 6px solid #3a4f7e80;
  }
 
 .project-panel2:hover h2 {
