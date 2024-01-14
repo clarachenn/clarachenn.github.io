@@ -28,19 +28,20 @@ function toggleTheme() {
 document.addEventListener("DOMContentLoaded", function() {
     var savedTheme = localStorage.getItem("theme");
 
-    if (savedTheme === "light") {
-        document.getElementById("lightStylesheet").disabled = false;
-        document.getElementById("darkStylesheet").disabled = true;
-        themeButton.innerHTML = '<img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/themes/sun.png" alt="Light Theme">';
-        githubButton.innerHTML = '<img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/contact-buttons/github-light.png" alt="Github Logo">';
-        linkedinButton.innerHTML = '<img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/contact-buttons/linkedin-light.png" alt="LinkedIn Logo">';
-        emailButton.innerHTML = '<img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/contact-buttons/email-light.png" alt="Email Logo">';
-    } else {
+    if (savedTheme === "dark") {
         document.getElementById("lightStylesheet").disabled = true;
         document.getElementById("darkStylesheet").disabled = false;
         themeButton.innerHTML = '<img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/themes/moon.png" alt="Light Theme">';
         githubButton.innerHTML = '<img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/contact-buttons/github-dark.png" alt="GitHub Logo">';
         linkedinButton.innerHTML = '<img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/contact-buttons/linkedin-dark.png" alt="LinkedIn Logo">';
         emailButton.innerHTML = '<img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/contact-buttons/email-dark.png" alt="Email Logo">';
+    } else {
+        document.getElementById("lightStylesheet").disabled = false;
+        document.getElementById("darkStylesheet").disabled = true;
+        themeButton.innerHTML = '<img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/themes/sun.png" alt="Light Theme">';
+        githubButton.innerHTML = '<img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/contact-buttons/github-light.png" alt="Github Logo">';
+        linkedinButton.innerHTML = '<img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/contact-buttons/linkedin-light.png" alt="LinkedIn Logo">';
+        emailButton.innerHTML = '<img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/contact-buttons/email-light.png" alt="Email Logo">';
+    
     }
 });
