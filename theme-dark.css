@@ -56,9 +56,9 @@ li a:hover {
     background-color: #9ebc9738;
 }
 
-.education-panel h4, 
+.education-panel h3, 
 .education-panel p, 
-.education-panel h5 {
+.education-panel h4 {
     color: rgb(196, 213, 203);
 }
 
@@ -70,8 +70,8 @@ li a:hover {
     background-color: #29352d52;
 }
 
+.experience-panel h3, 
 .experience-panel h4, 
-.experience-panel h5, 
 .experience-panel p {
     color: rgb(196, 213, 203);
 }
@@ -88,7 +88,7 @@ li a:hover {
     box-shadow: 0 0 30px rgba(24, 24, 24, 0.812);
 }
 
-.ec-text h4, 
+.ec-text h3, 
 .ec-text p {
     color: rgb(196, 213, 203);
 }

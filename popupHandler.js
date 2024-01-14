@@ -5,11 +5,14 @@ function openPopup() {
     document.getElementById("imagePopup").style.display = "flex";
     document.getElementById("popupContent").style.display = "block";
     showTkdSlide(currentTkdImage)
+    document.body.classList.add('no-scroll');
 }
 
 function closePopup() {
     document.getElementById("imagePopup").style.display = "none";
     document.getElementById("popupContent").style.display = "none";
+    document.body.classList.remove('no-scroll');
+
 }
 
 function showTkdSlide(index) {
@@ -39,11 +42,14 @@ function openVHPopup() {
     document.getElementById("VHImagePopup").style.display = "flex";
     document.getElementById("VHPopupContent").style.display = "block";
     showVHSlide(currentVHImage)
+    document.body.classList.add('no-scroll');
 }
 
 function closeVHPopup() {
     document.getElementById("VHImagePopup").style.display = "none";
     document.getElementById("VHPopupContent").style.display = "none";
+    document.body.classList.remove('no-scroll');
+
 }
 
 function showVHSlide(index) {

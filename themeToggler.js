@@ -42,6 +42,5 @@ document.addEventListener("DOMContentLoaded", function() {
         githubButton.innerHTML = '<img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/contact-buttons/github-light.png" alt="Github Logo">';
         linkedinButton.innerHTML = '<img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/contact-buttons/linkedin-light.png" alt="LinkedIn Logo">';
         emailButton.innerHTML = '<img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/contact-buttons/email-light.png" alt="Email Logo">';
-    
     }
 });
