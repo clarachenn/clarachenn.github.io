@@ -664,7 +664,6 @@ opacity: 0.3;
     opacity: 0.9;
     border-radius: 20px;
     margin-right: 200px;
-    padding: auto;
     width: 20%;
     height: 50%;
     opacity: 0; 
@@ -820,7 +819,6 @@ opacity: 0.3;
     .project-panel {
         flex: 0 0 calc(90% - 20px);
         margin-bottom: 20px;
-        padding: auto;
      }
 
     .project-panel h2 {
@@ -844,7 +842,6 @@ opacity: 0.3;
     .experience-panel,
     .ec-panel {
         width: auto;
-        padding: auto;
         text-align: center;
         align-items: center;
     }
@@ -899,7 +896,6 @@ opacity: 0.3;
     .index-panel {
         align-items: center;
         text-align: center;
-        padding: auto;
         margin: auto;
     }
 
@@ -907,7 +903,6 @@ opacity: 0.3;
         width: 60%;
         height: auto;
         align-items: center;
-        padding: auto;
         margin: auto;
     }
  
