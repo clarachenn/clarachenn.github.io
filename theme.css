@@ -1,7 +1,6 @@
 body {
-    background: radial-gradient(circle, rgb(38, 68, 45), #503f4a);
     background: radial-gradient(circle, rgb(184, 228, 238), #f0d19f);
-    background: linear-gradient(to bottom, #124b2e, #3a244e);
+
 
     /* background-color: rgb(42, 69, 48); */
     margin: 0;
@@ -30,7 +29,7 @@ h1 {
     font-family: Arial, sans-serif;
     font-size: 100pt;
     text-align: center;
-    color: rgb(175, 208, 189);
+    color: #042469c5;
     opacity: 0;
     animation: fadeInUp 1s forwards;
 }
@@ -49,21 +48,21 @@ h1 {
 
 h2 {
     font-family: Arial, sans-serif;
-    color: rgb(196, 213, 203);
+    color: #3a4f7e;
     font-size: 26pt;
     text-align: center;
 }
 
 h3 {
     font-family: Arial, sans-serif;
-    color: rgb(196, 213, 203);
+    color: #3a4f7e;
     font-size: 20pt;
  
 }
 
 h4 {
     font-family: Arial, sans-serif;
-    color: rgb(196, 213, 203);
+    color: #3a4f7e;
     font-size: 18pt;
 }
 
@@ -94,20 +93,20 @@ li a {
     font-size: 13pt;
     display: block;
     text-align: center;
-    color: white;
+    color: rgb(78, 107, 169);
     text-decoration: none;
     width: 140px;
 }
 
 li a.active {
     font-family: Arial, sans-serif;
-    color: #99b49a;
+    color: rgb(43, 65, 112);
 }
 
 li a:hover {
     font-family: cursive;
     font-size: 16pt;
-    color: #99b49a;
+    color: rgba(13, 41, 102, 0.747);
 }
  
 .project-container {
@@ -126,11 +125,11 @@ li a:hover {
 .project-panel {
     position: relative;
     /* background-color: #92a48e; */
-    background-color: #45644e55;
-    height: auto;
+     height: auto;
     padding: 40px;
-    border: 10px solid rgb(199, 217, 191);
-    border-radius: 50px;
+     border-radius: 50px;
+    background-color: #8dcbdc58;
+    border: 10px solid rgba(129, 196, 218, 0.587);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
     flex: 0 0 calc(38% - 10px);
     margin-bottom: 40px;  
@@ -143,7 +142,7 @@ li a:hover {
 .project-panel:hover {
     border-radius: 60px;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
-    background-color: #5d7a63; 
+    background-color: #8ecae0be;
     transform: scale(1.03);
 }
 
@@ -184,7 +183,7 @@ li a:hover {
 .project-panel h2 {
     font-family: Arial, sans-serif;
     font-size: 20pt;
-    color: #b9e3c0;
+    color: rgba(13, 41, 102, 0.747);
     text-align: center;
 }
 
@@ -193,22 +192,22 @@ li a:hover {
     word-wrap: break-word;
     white-space: normal;
     font-size: 16pt;
-    color: #b9e3c0;
+    color: rgba(13, 41, 102, 0.747);
 }
 
 .project-panel:hover h2 {
-    color: rgb(226, 248, 226);
+    color: rgba(20, 41, 85, 0.747);
     font-size: 30px;
 }
 
 .project-panel:hover p {
-    color: rgb(226, 248, 226);
+    color: rgba(20, 41, 85, 0.747);
 }
 
 
 .education-container {
     box-sizing: border-box;
-    background-color: #1b37238b;
+    background-color: #a4c4cb9e;
     border-radius: 50px;
     width: 100%;
     height: auto;
@@ -224,19 +223,19 @@ li a:hover {
     height: auto;
     padding: 30px;
     margin: 20px;
-    background-color: #9ebc9738;
+    background-color: #56a1c638;
     text-align: left;
 }
 
 .education-panel h4 {
-    color: rgb(196, 213, 203);
+    color: rgb(58, 79, 126);
     font-size: 18pt;
     margin-top: 10px;
     margin-bottom: 4px;
 }
 
 .education-panel p {
-    color: rgb(196, 213, 203);
+    color: rgb(58, 79, 126);
     margin: 50px;
     margin-top: 16px;
     margin-bottom: 0px;
@@ -244,7 +243,7 @@ li a:hover {
 }
 
 .education-panel h5 {
-    color: rgb(196, 213, 203);
+    color: rgb(58, 79, 126);
     font-size: 12pt;
     font-style: italic;
     margin:0;
@@ -291,7 +290,7 @@ li a:hover {
 
 .experience-container {
     box-sizing: border-box;
-    background-color: #4b5e5057;
+    background-color: #e1b73b3d;
     border-radius: 50px;
     width: auto;
     height: auto;
@@ -307,26 +306,26 @@ li a:hover {
     height: auto;
     padding: 30px;
     margin: 20px;
-    background-color: #29352d52;
+    background-color: #e4ae182b;
     text-align: left;
 }
 
 .experience-panel h4 {
-    color: rgb(196, 213, 203);
+    color: rgb(58, 79, 126);
     font-size: 18pt;
     margin-top: 10px;
     margin-bottom: 4px;
 }
 
 .experience-panel h5 {
-    color: rgb(196, 213, 203);
+    color: rgb(58, 79, 126);
     font-size: 12pt;
     font-style: italic;
     margin:0;
 }
 
 .experience-panel p {
-    color: rgb(196, 213, 203);
+    color: rgb(58, 79, 126);
     margin: 50px;
     margin-top: 16px;
     margin-bottom: 0px;
@@ -359,7 +358,7 @@ li a:hover {
 
 .ec-container {
     box-sizing: border-box;
-    background-color: #1c2f2187;
+    background-color: #39b8d534;
     border-radius: 50px;
     width: auto;
     height: auto;
@@ -375,7 +374,7 @@ li a:hover {
     height: auto;
     padding: 30px;
     margin: 20px;
-    background-color: #81968852;
+    background-color: #108da322;
     display: flex;
     align-items: center;
 }
@@ -401,14 +400,14 @@ li a:hover {
 }
 
 .ec-text h4 {
-    color: rgb(196, 213, 203);
+    color: rgb(58, 79, 126);
     font-size: 18pt;
     margin-top: 10px;
     margin-bottom: 4px;
 }
 
 .ec-text p {
-    color: rgb(196, 213, 203);
+    color: rgb(58, 79, 126);
     font-size: 15pt;
 }
 
@@ -428,7 +427,7 @@ li a:hover {
 
 .popup-content {
     display: none;
-    background-color: #3b503e;
+    background-color: #78a6c9f3;
     opacity: 0.95;
     width: 50%;
     height: 60%;
@@ -452,7 +451,7 @@ li a:hover {
     float: right;
     cursor: pointer;
     font-size: 70px;
-    color: #fbe7e7b0;
+    color: #284584b0;
 }
  
 #tkd-gallery {
