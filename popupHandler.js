@@ -1,6 +1,8 @@
+// Variables for Taekwondo image gallery
 var currentTkdImage = 0;
 var TkdImages = document.querySelectorAll("#tkd-gallery img");
 
+// Function to open Taekwondo image popup
 function openPopup() {
     document.getElementById("imagePopup").style.display = "flex";
     document.getElementById("popupContent").style.display = "block";
@@ -8,13 +10,14 @@ function openPopup() {
     document.body.classList.add('no-scroll');
 }
 
+// Function to close Taekwondo image popup
 function closePopup() {
     document.getElementById("imagePopup").style.display = "none";
     document.getElementById("popupContent").style.display = "none";
     document.body.classList.remove('no-scroll');
-
 }
 
+// Function to show a specific Taekwondo image
 function showTkdSlide(index) {
     TkdImages.forEach((img, i) => {
         if (i === index) {
@@ -25,19 +28,23 @@ function showTkdSlide(index) {
     });
 }
 
+// Function to show the previous Taekwondo image
 function prevTkdImage() {
     currentTkdImage = (currentTkdImage - 1 + TkdImages.length) % TkdImages.length;
     showTkdSlide(currentTkdImage);
 }
 
+// Function to show the next Taekwondo image
 function nextTkdImage() {
     currentTkdImage = (currentTkdImage + 1) % TkdImages.length;
     showTkdSlide(currentTkdImage);
 }
 
+// Variables for VenusHacks image gallery
 var currentVHImage = 0;
 var VHImages = document.querySelectorAll("#vh-gallery img");
 
+// Function to open VenusHacks image popup
 function openVHPopup() {
     document.getElementById("VHImagePopup").style.display = "flex";
     document.getElementById("VHPopupContent").style.display = "block";
@@ -45,6 +52,7 @@ function openVHPopup() {
     document.body.classList.add('no-scroll');
 }
 
+// Function to close VenusHacks image popup
 function closeVHPopup() {
     document.getElementById("VHImagePopup").style.display = "none";
     document.getElementById("VHPopupContent").style.display = "none";
@@ -52,6 +60,7 @@ function closeVHPopup() {
 
 }
 
+// Function to show a specific VenusHacks image
 function showVHSlide(index) {
     VHImages.forEach((img, i) => {
         if (i === index) {
@@ -62,11 +71,13 @@ function showVHSlide(index) {
     });
 }
 
+// Function to show the previous VenusHacks image
 function prevVHImage() {
     currentVHImage = (currentVHImage - 1 + VHImages.length) % VHImages.length;
     showVHSlide(currentVHImage);
 }
 
+// Function to show the next VenusHacks image
 function nextVHImage() {
     currentVHImage = (currentVHImage + 1) % VHImages.length;
     showVHSlide(currentVHImage);
