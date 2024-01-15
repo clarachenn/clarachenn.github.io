@@ -23,18 +23,6 @@ h1 {
     animation: fadeInUp 1s forwards;
 }
 
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
 h2 {
     font-family: Arial, sans-serif;
     color: #3a4f7e;
@@ -424,16 +412,6 @@ li a:hover {
     animation: fadeIn 0.5s ease-in-out;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-
 .popup-close {
     margin-top: -100px;
     float: right;
@@ -586,17 +564,6 @@ li a:hover {
 .contact-container {
     opacity: 0;
     animation: fadeInLeft 1s forwards;
-}
-
-@keyframes fadeInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-200px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
 }
  
 .index-panel {
