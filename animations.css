@@ -1,3 +1,4 @@
+/* Gradient Move Keyframes */
 @keyframes gradientMove {
     0% {
         background-position: 0 0;
@@ -7,6 +8,7 @@
     }
 }
 
+/* Fade In Up Keyframes */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -18,6 +20,7 @@
     }
 }
 
+/* Fade In Keyframes */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -27,6 +30,7 @@
     }
 }
 
+/* Fade In Left Keyframes */
 @keyframes fadeInLeft {
     from {
         opacity: 0;
