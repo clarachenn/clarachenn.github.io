@@ -1,20 +1,9 @@
 body {
     background: radial-gradient(circle, rgb(184, 228, 238), #f0d19f);
-
-
     /* background-color: rgb(42, 69, 48); */
     margin: 0;
     background-size: 200% 200%;
     animation: gradientMove 13s linear infinite;
-}
-
-@keyframes gradientMove {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 200% 200%;
-    }
 }
 
 .container {
@@ -627,34 +616,6 @@ li a:hover {
     padding: 0;
 }
 
-/* .index-panel::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(233, 203, 164);  
-    opacity: 0.3;   
-} */
-
-/* 4
-    background-color: rgb(44, 57, 49);  
-    opacity: 0.3;   
-*/
-
-/* 3 
-background-color: rgb(209, 246, 249);  
-opacity: 0.4;   
-*/
-
-/* 
-10
-background-color: rgb(233, 203, 164);  
-opacity: 0.3;   
-*/
-
-
 .index-about-panel {
     background-color: rgb(169, 190, 200);
     background: radial-gradient(circle, rgb(139, 205, 220), #f2c69b);
@@ -767,164 +728,6 @@ opacity: 0.3;
 
 .project-panel2:hover h2 {
     opacity: 1;
-}
-
-@media only screen and (max-width: 700px) {
-    body {
-        background-size: cover;
-    }
-
-    .container {
-        width: 90%;
-    }
-
-    h1 {
-        font-size: 30pt;
-    }
-
-    h2 {
-        font-size: 16pt;
-    }
-
-    h3 {
-        font-size: 14pt;
-    }
-
-    h4 {
-        font-size: 14pt;
-    }
-
-    div {
-        width: 100%;
-    }
-
-    ul {
-        padding: 10px;
-    }
-
-    li {
-        margin-right: 5px;
-    }
-
-    li a {
-        font-size: 12pt;
-        width: 120px;
-    }
-
-    .project-container {
-        justify-content: center;
-        width: 80%;
-    }
-
-    .project-panel {
-        flex: 0 0 calc(90% - 20px);
-        margin-bottom: 20px;
-     }
-
-    .project-panel h2 {
-        font-size: 16pt;
-    }
-
-    .project-panel p {
-        font-size: 14pt;
-    }
-
-    .education-container,
-    .experience-container,
-    .ec-container,
-    .contact-container {
-        width: auto;
-        padding: 10px;
-        margin: 30px 0;
-    }
-
-    .education-panel,
-    .experience-panel,
-    .ec-panel {
-        width: auto;
-        text-align: center;
-        align-items: center;
-    }
-
-    .education-panel h3,
-    .experience-panel h3,
-    .ec-panel h3 {
-        font-size: 14pt;
-        margin-bottom: 10px;
-    }
-
-    .education-panel h4,
-    .experience-panel h4,
-    .ec-panel h4 {
-        font-size: 14pt;
-        margin-bottom: 6px;
-    }
-
-    .education-panel p,
-    .experience-panel p,
-    .ec-panel p {
-        font-size: 14pt;
-        margin: 20px 0;
-    }
-
-    .ec-panel {
-         display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .ec-text {
-        padding-left: 0;
-        width: 100%;
-        text-align: center;
-    }
-    
-    .ec-image {
-         width: auto; 
-        align-items: center;
-        transition: transform 0.2s ease-in-out;
-        transition: box-shadow 0.2s ease-in-out;
-    }
-    
-    .ec-image:hover {
-        transform: scale(1.05);
-        box-shadow: 0 0 30px rgba(24, 24, 24, 0.812);
-        cursor: pointer;
-    }
-
-    .index-panel {
-        align-items: center;
-        text-align: center;
-        margin: auto;
-    }
-
-    .index-about-panel {
-        width: 60%;
-        height: auto;
-        align-items: center;
-        margin: auto;
-    }
- 
-    .project-panel2 {
-        position: relative;
-        background-color: #45644e55;
-        height: auto;
-        padding: 10px 0;
-        border: 8px solid rgb(199, 217, 191);
-        border-radius: 40px;
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-        flex: 0 0 calc(26%);
-        margin-bottom: 40px;  
-        text-decoration: none;
-        width: 90%;
-    }
-
-    .project-container-vertical {
-        width: auto;
-        align-items: center;
-        flex-direction: column;
-    }
 }
 
 .typewriter-container {
