@@ -204,6 +204,12 @@ li a:hover {
     color: rgb(96, 151, 187);
 }
 
+
 #animated-text {
     border-right: 2px solid #042469c5;
+    color: #3a4f7e;
+}
+
+#copyrightText {
+    color: #3a4f7e;
 }

@@ -191,7 +191,12 @@ li a:hover {
 .index-container h1 a:hover {
     color: rgb(86, 146, 101);
 }
-
+ 
 #animated-text {
     border-right: 2px solid #afd0bd;
+    color: #c4d5cb;
+}
+
+#copyrightText {
+    color: #c4d5cb;
 }

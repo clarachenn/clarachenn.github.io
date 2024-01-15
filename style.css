@@ -340,7 +340,7 @@ li a:hover {
     width: auto;
     height: auto;
     padding: 30px;
-    margin: 60px 0;
+    margin-top: 60px;
     justify-content: space-around;
     overflow: hidden;
 }
@@ -497,40 +497,6 @@ li a:hover {
     height: auto;
 }
 
-#githubButton {
-    border: none;
-    background: none;
-    cursor: pointer;
-    bottom: 18px;
-    left: 18px;
-    position: fixed;
-}
-
-#linkedinButton {
-    border: none;
-    background: none;
-    cursor: pointer;
-    bottom: 78px;
-    left: 18px;
-    position: fixed;
-}
-
-#emailButton {
-    border: none;
-    background: none;
-    cursor: pointer;
-    bottom: 138px;
-    left: 18px;
-    position: fixed;
-}
-
-#githubButton img,
-#linkedinButton img,
-#emailButton img {
-    width: 40px;
-    height: auto;
-}
-
 #themeButton:hover,
 #githubButton:hover,
 #linkedinButton:hover,
@@ -633,7 +599,7 @@ li a:hover {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
     width: 80%;
-    margin: 0 auto;
+    margin: 50px auto;
     text-align: center;
     transform: translateX(-100%);
     transition: transform 1s ease-in-out;
@@ -737,3 +703,46 @@ li a:hover {
 .no-scroll {
     overflow: hidden;
 }
+
+/* Footer Styles */
+footer {
+     padding: 0;
+    margin-top: 100px;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+#copyrightText {
+    font-family: Arial, sans-serif;
+    width: auto;
+    font-size: 14pt;
+    color: #3a4f7e;
+}
+
+#githubButton,
+#linkedinButton {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+#githubButton {
+    margin-left: 300px;
+}
+
+#emailButton {
+    display: inline-block;
+    margin-right: auto;
+}
+
+#githubButton img,
+#linkedinButton img,
+#emailButton img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+ 

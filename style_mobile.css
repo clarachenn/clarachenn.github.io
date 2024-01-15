@@ -163,4 +163,31 @@
         align-items: center;
         flex-direction: column;
     }
+
+    /* Footer Styles */
+    footer {
+        flex-direction: column;  
+        height: auto;
+        padding: 20px;
+        justify-content: center;  
+        align-items: center;  
+        text-align: center;  
+    }
+
+    #copyrightText {
+        margin-top: 20px;
+    }
+
+    #githubButton,
+    #linkedinButton,
+    #emailButton {
+        margin: 10px;
+    }
+
+    #githubButton img,
+    #linkedinButton img,
+    #emailButton img {
+        width: 30px;
+        height: auto;
+    }
 }
