@@ -1,245 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About</title>
-        <link rel="stylesheet" type="text/css" href="theme.css">
-        <link rel="stylesheet" type="text/css" href="theme-dark.css" disabled id="darkStylesheet">
-        <link rel="stylesheet" type="text/css" href="theme-light.css" id="lightStylesheet">
-        <script src="themeToggler.js"></script>
-    </head>
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <body>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="about.html" class="active">about</a></li>
-                    <li><a href="projects.html">projects</a></li>
-                    <li><a href="contact.html">contact</a></li>
-                </ul>
-            </nav>
+    <!-- Title of the page -->
+    <title>About</title>
 
-            <button id="themeButton" onclick="toggleTheme()">
-                <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/themes/sun.png" alt="Sun Image">
-            </button>
-
-             
-            <h1>about me</h1>
-            <h2>Hello, I am Clara!</h2>
-            <div class="about-pg-container">
-                <h3>I am a second-year Computer Science student at the University of California, Irvine. 
-                    My journey in software development began in 9th grade, and since then, I have 
-                    cultivated a passion for all things related to technology. I am proficient in 
-                    languages such as Python, Java, C++, JavaScript, HTML, and CSS. As I progress through my 
-                    studies, I am eager to explore advanced topics, engage in meaningful projects, and 
-                    continue my growth in the dynamic field of computer science.</h3>
+    <!-- Stylesheets for themes -->
+    <link rel="stylesheet" type="text/css" href="theme.css">
+    <link rel="stylesheet" type="text/css" href="theme-dark.css" disabled id="darkStylesheet">
+    <link rel="stylesheet" type="text/css" href="theme-light.css" id="lightStylesheet">
     
-                <h3>In addition to my academic pursuits, I actively engage in a diverse range of 
-                    extracurricular activities both on and off campus. I serve as a dedicated Academic 
-                    and Alumni Committee Member at the ICS Student Council, contribute as a Corporate 
-                    Committee Member for VenusHacks, and participate in Hack at UCI. Furthermore, my 
-                    commitment extends to projects, and I proudly contribute as a Web Developer for 
-                    CanSat, combining my technical skills with a passion for innovation. Beyond the 
-                    realm of technology, I am also a member of the Taekwondo Club at UCI.</h3>
-            </div>
-    
-            <div class="education-container">
-                <h2>Education</h2>
-                <div class="education-panel">
+    <!-- Script for theme toggling -->
+    <script src="themeToggler.js"></script>
+</head>
 
-                    <div class="uci-logo">
-                        <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/logos/uci_logo.png" alt="UCI Logo">
-                    </div>
-                    <h3>University of California, Irvine</h3>
-                    <h4>Bachelor's  Degree      |     2022 - Present</h4>
-                    <p>Major: Computer Science</p>
-                    <p>Activities: ICS Student Council (AAA Committee Member), Hack at UCI, 
-                        VenusHacks (Corporate Committee Member), Lab Tutor, Learning Assistant, Taekwondo Club</p>
+<body>
+    <!-- Main container for the content -->
+    <div class="container">
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html" class="active">about</a></li>
+                <li><a href="projects.html">projects</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Theme toggle button -->
+        <button id="themeButton" onclick="toggleTheme()">
+            <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/themes/sun.png" alt="Sun Image">
+        </button>
+
+        <!-- Main heading -->
+        <h1>about me</h1>
+
+        <!-- Subheading -->
+        <h2>Hello, I am Clara!</h2>
+
+        <!-- About content container -->
+        <div class="about-pg-container">
+            <!-- Introduction text -->
+            <h3>I am a second-year Computer Science student at the University of California, Irvine. 
+                My journey in software development began in 9th grade, and since then, I have 
+                cultivated a passion for all things related to technology. I am proficient in 
+                languages such as Python, Java, C++, JavaScript, HTML, and CSS. As I progress through my 
+                studies, I am eager to explore advanced topics, engage in meaningful projects, and 
+                continue my growth in the dynamic field of computer science.</h3>
+
+            <h3>In addition to my academic pursuits, I actively engage in a diverse range of 
+                extracurricular activities both on and off campus. I serve as a dedicated Academic 
+                and Alumni Committee Member at the ICS Student Council, contribute as a Corporate 
+                Committee Member for VenusHacks, and participate in Hack at UCI. Furthermore, my 
+                commitment extends to projects, and I proudly contribute as a Web Developer for 
+                CanSat, combining my technical skills with a passion for innovation. Beyond the 
+                realm of technology, I am also a member of the Taekwondo Club at UCI.</h3>
+        </div>
+
+        <!-- Education section -->
+        <div class="education-container">
+            <h2>Education</h2>
+
+        <!-- Education panels with details about schools and activities -->
+            <div class="education-panel">
+                <div class="uci-logo">
+                    <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/logos/uci_logo.png" alt="UCI Logo">
                 </div>
-
-                <div class="education-panel">
-
-                    <div class="lbss-logo">
-                        <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/logos/lbss.png" alt="Lord Byng Logo">
-                    </div>
-                    <h3>Lord Byng Secondary School</h3>
-                    <h4>High School Degree      |       2017 - 2022</h4>
-                    <p>Activities: Peer Counselor, Girls Will Stay (Vice President), 
-                        Penpal Program, Yearbook (Staff Lead), Swim Team, Ski & Snowboard Team</p>
-                    <p>Awards: Award for Academics (2022), Principal's List (2017-2022)</p>
-                </div>
-            </div>
-
-            <div class="experience-container">
-                <h2>Experience</h2>
-                <div class="experience-panel">
-
-                    <div class="dbh-logo">
-                        <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/logos/uci_dbh.jpg" alt="DBH Logo">
-                    </div>
-                    <h3>Computer Science Learning Assistant</h3>
-                    <h4>UC Irvine Donald Bren School of Information and Computer Sciences</h4>
-                    <h4>Sept 2023 - Present</h4>
-                    <p>- Explained complex computer science topics, including the Python Data Model, recursion, asymptotic analysis, functional programming, and databases, to intermediate programming students.</p>
-                    <p>- Collaborated with students in debugging sessions, addressing and resolving programming challenges together.</p>
-                    <p>- Taught students how to write effective unit tests for their programs, providing them with a practical skill for program validation and improvement.</p>
-                    <p>- Guided students in using Git for committing code, emphasizing the importance of version control in maintaining code integrity.</p>
-                </div>
-
-                <div class="experience-panel">
-
-                    <div class="icssc-logo">
-                        <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/logos/icssc.png" alt="ICSSC Logo">
-                    </div>
-                    <h3>Academic and Alumni Affairs Committee Member</h3>
-                    <h4>UCI ICS Student Council</h4>
-                    <h4>Sep 2022 - Present</h4>
-                    <p>- Actively organized and coordinated UCI events for faculty, alumni, and undergraduates, securing guest speakers, 
-                        managing event logistics, and boosting alumni engagement, resulting in an increase in alumni contributions.</p>
-                    <p>- Collaborated to enhance ICS events, creating a dynamic environment for networking, socializing, and learning.</p>
-                </div>
-
-                <div class="experience-panel">
-
-                    <div class="dbh-logo">
-                        <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/logos/uci_dbh.jpg" alt="DBH Logo">
-                    </div>
-
-                    <h3>Computer Science Lab Tutor</h3>
-                    <h4>UC Irvine Donald Bren School of Information and Computer Sciences</h4>
-                    <h4>Apr 2023 - Jun 2023</h4>
-                    <p>- Guided beginner students through the fundamental principles of programming.</p>
-                    <p>- Collaborated closely with the course professor to enhance the course content and structure, thereby improving the overall learning experience.</p>
-                    <p>- Offered personalized assistance, clarified intricate concepts, and instilled essential debugging skills.</p>
-                    <p>- Facilitated lab exams, ensuring fair and organized assessment procedures, resulting in a high student success rate.</p>
-                </div>
-
+                <h3>University of California, Irvine</h3>
+                <h4>Bachelor's  Degree      |     2022 - Present</h4>
+                <p>Major: Computer Science</p>
+                <p>Activities: ICS Student Council (AAA Committee Member), Hack at UCI, 
+                    VenusHacks (Corporate Committee Member), Lab Tutor, Learning Assistant, Taekwondo Club</p>
             </div>
 
-            <div class="ec-container"> 
-                <h2>Extracurriculars</h2>
-                <div class="ec-panel">
-                    <div class="ec-text">
-                        <h3>Taekwondo</h3>
-                        <p>As a member of the Taekwondo Club at UCI, I actively participate in and attend 
-                            practices, engaging in training sessions to continually improve my skills in 
-                            Taekwondo. My journey in Taekwondo began in the 4th grade, and it has since 
-                            evolved into one of my greatest passions. Having achieved a 2nd dan black 
-                            belt, I participated in numerous competitions and previously served as an 
-                            assistant instructor. I thoroughly enjoy the challenges and camaraderie that 
-                            come with this martial art, making it a fulfilling part of my life.</p>
-                    </div>
-                    <div class="ec-image">
-                        <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/tkd1.jpg" class="responsive-image" onclick="openPopup()" alt="Taekwondo Image">
-                    </div>
+            <div class="education-panel">
+                <div class="lbss-logo">
+                    <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/logos/lbss.png" alt="Lord Byng Logo">
+                </div>
+                <h3>Lord Byng Secondary School</h3>
+                <h4>High School Degree      |       2017 - 2022</h4>
+                <p>Activities: Peer Counselor, Girls Will Stay (Vice President), 
+                    Penpal Program, Yearbook (Staff Lead), Swim Team, Ski & Snowboard Team</p>
+                <p>Awards: Award for Academics (2022), Principal's List (2017-2022)</p>
+            </div>
+        </div>
+
+        <!-- Experience section -->
+        <div class="experience-container">
+            <h2>Experience</h2>
+
+            <!-- Experience panels with details about roles and responsibilities -->
+            <div class="experience-panel">
+                <div class="dbh-logo">
+                    <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/logos/uci_dbh.jpg" alt="DBH Logo">
+                </div>
+                <h3>Computer Science Learning Assistant</h3>
+                <h4>UC Irvine Donald Bren School of Information and Computer Sciences</h4>
+                <h4>Sept 2023 - Present</h4>
+                <p>- Explained complex computer science topics, including the Python Data Model, recursion, asymptotic analysis, functional programming, and databases, to intermediate programming students.</p>
+                <p>- Collaborated with students in debugging sessions, addressing and resolving programming challenges together.</p>
+                <p>- Taught students how to write effective unit tests for their programs, providing them with a practical skill for program validation and improvement.</p>
+                <p>- Guided students in using Git for committing code, emphasizing the importance of version control in maintaining code integrity.</p>
+            </div>
+
+            <div class="experience-panel">
+                <div class="icssc-logo">
+                    <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/logos/icssc.png" alt="ICSSC Logo">
+                </div>
+                <h3>Academic and Alumni Affairs Committee Member</h3>
+                <h4>UCI ICS Student Council</h4>
+                <h4>Sep 2022 - Present</h4>
+                <p>- Actively organized and coordinated UCI events for faculty, alumni, and undergraduates, securing guest speakers, 
+                    managing event logistics, and boosting alumni engagement, resulting in an increase in alumni contributions.</p>
+                <p>- Collaborated to enhance ICS events, creating a dynamic environment for networking, socializing, and learning.</p>
+            </div>
+
+            <div class="experience-panel">
+
+                <div class="dbh-logo">
+                    <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/logos/uci_dbh.jpg" alt="DBH Logo">
                 </div>
 
-                <div class="popup" id="imagePopup">
-                    <div class="popup-content" id="popupContent">
-                        <span class="popup-close" onclick="closePopup()">&times;</span>
-                        <div id="tkd-gallery">
-                            <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/tkd1.jpg" width="600" alt="Taekwondo Kicking 1">
-                            <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/tkd2.jpg" width="600" alt="Taekwondo Kicking 2">
-                            <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/tkd3.jpg" width="600" alt="Taekwondo Image">
-                            <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/tkd4.jpg" width="600" alt="Taekwondo Competition">
-                            <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/tkd5.jpg" width="600" alt="Taekwondo Competition Team">
-                            <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/tkd6.jpg" width="600" alt="Taekwondo UCI 1">
-                            <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/tkd7.jpg" width="600" alt="Taekwondo UCI 2">
+                <h3>Computer Science Lab Tutor</h3>
+                <h4>UC Irvine Donald Bren School of Information and Computer Sciences</h4>
+                <h4>Apr 2023 - Jun 2023</h4>
+                <p>- Guided beginner students through the fundamental principles of programming.</p>
+                <p>- Collaborated closely with the course professor to enhance the course content and structure, thereby improving the overall learning experience.</p>
+                <p>- Offered personalized assistance, clarified intricate concepts, and instilled essential debugging skills.</p>
+                <p>- Facilitated lab exams, ensuring fair and organized assessment procedures, resulting in a high student success rate.</p>
+            </div>
+        </div>
 
-                            <button class="prev" onclick="prevTkdImage()">❮</button>
-                            <button class="next" onclick="nextTkdImage()">❯</button>
-                        </div>
+        <!-- Extracurriculars section -->
+        <div class="ec-container"> 
+            <h2>Extracurriculars</h2>
+
+            <!-- Extracurricular panels with details about activities -->
+            <div class="ec-panel">
+                <div class="ec-text">
+                    <h3>Taekwondo</h3>
+                    <p>As a member of the Taekwondo Club at UCI, I actively participate in and attend 
+                        practices, engaging in training sessions to continually improve my skills in 
+                        Taekwondo. My journey in Taekwondo began in the 4th grade, and it has since 
+                        evolved into one of my greatest passions. Having achieved a 2nd dan black 
+                        belt, I participated in numerous competitions and previously served as an 
+                        assistant instructor. I thoroughly enjoy the challenges and camaraderie that 
+                        come with this martial art, making it a fulfilling part of my life.</p>
+                </div>
+                <div class="ec-image">
+                    <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/tkd1.jpg" class="responsive-image" onclick="openPopup()" alt="Taekwondo Image">
+                </div>
+            </div>
+
+            <div class="popup" id="imagePopup">
+                <div class="popup-content" id="popupContent">
+                    <span class="popup-close" onclick="closePopup()">&times;</span>
+                    <div id="tkd-gallery">
+                        <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/tkd1.jpg" width="600" alt="Taekwondo Kicking 1">
+                        <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/tkd2.jpg" width="600" alt="Taekwondo Kicking 2">
+                        <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/tkd3.jpg" width="600" alt="Taekwondo Image">
+                        <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/tkd4.jpg" width="600" alt="Taekwondo Competition">
+                        <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/tkd5.jpg" width="600" alt="Taekwondo Competition Team">
+                        <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/tkd6.jpg" width="600" alt="Taekwondo UCI 1">
+                        <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/tkd7.jpg" width="600" alt="Taekwondo UCI 2">
+
+                        <button class="prev" onclick="prevTkdImage()">❮</button>
+                        <button class="next" onclick="nextTkdImage()">❯</button>
                     </div>
                 </div>
+            </div>
 
-                <div class="ec-panel">
-                    <div class="ec-text">
-                        <h3>Hack at UCI</h3>
-                        <p>I am a committed member of the Hack at UCI club, actively engaging in hackathons where 
-                            I apply my accumulated experience and knowledge to innovate and strategize for hack 
-                            projects. My enthusiasm for participating in hackathons stems from the collaborative 
-                            nature of the process, fostering a strong sense of team spirit. I find genuine joy 
-                            in working with fellow members, collectively brainstorming and devising creative 
-                            solutions to current challenges.</p>
-                    </div>
-
-                    <div class="ec-image">
-                        <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/VH1.JPG" class="responsive-image" onclick="openVHPopup()" alt="VenusHacks Image">
-                    </div>
+            <div class="ec-panel">
+                <div class="ec-text">
+                    <h3>Hack at UCI</h3>
+                    <p>I am a committed member of the Hack at UCI club, actively engaging in hackathons where 
+                        I apply my accumulated experience and knowledge to innovate and strategize for hack 
+                        projects. My enthusiasm for participating in hackathons stems from the collaborative 
+                        nature of the process, fostering a strong sense of team spirit. I find genuine joy 
+                        in working with fellow members, collectively brainstorming and devising creative 
+                        solutions to current challenges.</p>
                 </div>
 
-                <div class="popup" id="VHImagePopup">
-                    <div class="popup-content" id="VHPopupContent">
-                        <span class="popup-close" onclick="closeVHPopup()">&times;</span>
-                        <div id="vh-gallery">
-                            <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/VH1.JPG" width="600" alt="VenusHacks Image 1">
-                            <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/VH2.JPG" width="600" alt="VenusHacks Image 2">
-                            <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/VH3.JPG" width="600" alt="VenusHacks Image 3">
-                            <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/VH4.JPG" width="600" alt="VenusHacks Image 4">
-                            <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/VH5.JPG" width="600" alt="VenusHacks Team Picture">
-                            <button class="prev" onclick="prevVHImage()">❮</button>
-                            <button class="next" onclick="nextVHImage()">❯</button>
-                        </div>
+                <div class="ec-image">
+                    <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/VH1.JPG" class="responsive-image" onclick="openVHPopup()" alt="VenusHacks Image">
+                </div>
+            </div>
+
+            <div class="popup" id="VHImagePopup">
+                <div class="popup-content" id="VHPopupContent">
+                    <span class="popup-close" onclick="closeVHPopup()">&times;</span>
+                    <div id="vh-gallery">
+                        <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/VH1.JPG" width="600" alt="VenusHacks Image 1">
+                        <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/VH2.JPG" width="600" alt="VenusHacks Image 2">
+                        <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/VH3.JPG" width="600" alt="VenusHacks Image 3">
+                        <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/VH4.JPG" width="600" alt="VenusHacks Image 4">
+                        <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/VH5.JPG" width="600" alt="VenusHacks Team Picture">
+                        <button class="prev" onclick="prevVHImage()">❮</button>
+                        <button class="next" onclick="nextVHImage()">❯</button>
                     </div>
                 </div>
+            </div>
 
-                <div class="ec-panel">
-                    <div class="ec-text">
-                        <h3>Vancouver Gavel Club</h3>
-                        <p>Public speaking is a hobby in which I am profoundly passionate, and my commitment is exemplified 
-                            through my involvement in the Vancouver Toastmasters Gavel Club. Within this dynamic community, 
-                            I have not only improved my own public speaking skills but also contributed significantly to the 
-                            growth and enrichment of the club.</p>
-                        <p>I played a pivotal role in driving a remarkable 200% increase 
-                            in club membership, elevating our community from 30 to over 100 active members. Recognizing the 
-                            need for inclusivity and vibrancy, I successfully expanded the club from a single chapter to 
-                            three, fostering a more diverse and dynamic environment. Collaborating closely with the club 
-                            coordinator and fellow executive members, we worked as a team to enhance the overall public 
-                            speaking experience for all members.</p>
-                    </div>
-                    <div class="ec-image">
-                        <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/tm.jpg" class="responsive-image" alt="Gavel Club Image">
-                    </div>
+            <div class="ec-panel">
+                <div class="ec-text">
+                    <h3>Vancouver Gavel Club</h3>
+                    <p>Public speaking is a hobby in which I am profoundly passionate, and my commitment is exemplified 
+                        through my involvement in the Vancouver Toastmasters Gavel Club. Within this dynamic community, 
+                        I have not only improved my own public speaking skills but also contributed significantly to the 
+                        growth and enrichment of the club.</p>
+                    <p>I played a pivotal role in driving a remarkable 200% increase 
+                        in club membership, elevating our community from 30 to over 100 active members. Recognizing the 
+                        need for inclusivity and vibrancy, I successfully expanded the club from a single chapter to 
+                        three, fostering a more diverse and dynamic environment. Collaborating closely with the club 
+                        coordinator and fellow executive members, we worked as a team to enhance the overall public 
+                        speaking experience for all members.</p>
+                </div>
+                <div class="ec-image">
+                    <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/tm.jpg" class="responsive-image" alt="Gavel Club Image">
                 </div>
             </div>
         </div>
-        <a id="githubButton" href="https://github.com/clarachenn">
-            <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/contact-buttons/github-light.png" alt="GitHub Logo">
-        </a>
+    </div>
 
-        <a id="linkedinButton" href="https://www.linkedin.com/in/clarachenn/">
-            <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/contact-buttons/linkedin-light.png" alt="LinkedIn Logo">
-        </a>
+    <!-- Contact buttons -->
+    <a id="githubButton" href="https://github.com/clarachenn">
+        <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/contact-buttons/github-light.png" alt="GitHub Logo">
+    </a>
 
-        <a id="emailButton" href="mailto:clarachenn1@gmail.com">
-            <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/contact-buttons/email-light.png" alt="Email Logo">
-        </a>
+    <a id="linkedinButton" href="https://www.linkedin.com/in/clarachenn/">
+        <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/contact-buttons/linkedin-light.png" alt="LinkedIn Logo">
+    </a>
 
-        <script src="popupHandler.js"></script>
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                const panels = document.querySelectorAll(".education-panel, .experience-panel, .ec-panel");
-                
-                function checkVisibility() {
-                    panels.forEach(panel => {
-                        const panelTop = panel.getBoundingClientRect().top;
-                        const windowHeight = window.innerHeight;
+    <a id="emailButton" href="mailto:clarachenn1@gmail.com">
+        <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/contact-buttons/email-light.png" alt="Email Logo">
+    </a>
 
-                        if (panelTop < windowHeight * 0.75) {
-                            panel.classList.add("slide-in");
-                        } else {
-                            panel.classList.remove("slide-in");
-                        }
-                    });
-                }
+    <!-- JavaScript files -->
+    <script src="popupHandler.js"></script>
+    <script>
+        // JavaScript for checking visibility and applying styles
+        document.addEventListener("DOMContentLoaded", function () {
+            const panels = document.querySelectorAll(".education-panel, .experience-panel, .ec-panel");
+            
+            function checkVisibility() {
+                panels.forEach(panel => {
+                    const panelTop = panel.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
 
-                window.addEventListener("scroll", checkVisibility);
-            });
-
-        </script>
-    </body>
-
+                    if (panelTop < windowHeight * 0.75) {
+                        panel.classList.add("slide-in");
+                    } else {
+                        panel.classList.remove("slide-in");
+                    }
+                });
+            }
+            window.addEventListener("scroll", checkVisibility);
+        });
+    </script>
+    
+</body>
 </html>
