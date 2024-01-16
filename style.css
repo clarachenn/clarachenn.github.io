@@ -92,8 +92,6 @@ li a:hover {
     display: flex;
     flex-wrap: wrap;  
     justify-content: space-around;
-
-
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -102,9 +100,9 @@ li a:hover {
 .project-panel {
     position: relative;
     /* background-color: #92a48e; */
-     height: auto;
+    height: auto;
     padding: 40px;
-     border-radius: 50px;
+    border-radius: 50px;
     background-color: #8dcbdc58;
     border: 10px solid rgba(129, 196, 218, 0.587);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
