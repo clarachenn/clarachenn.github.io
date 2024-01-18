@@ -82,3 +82,45 @@ function nextVHImage() {
     currentVHImage = (currentVHImage + 1) % VHImages.length;
     showVHSlide(currentVHImage);
 }
+
+// Variables for TM image gallery
+var currentTMImage = 0;
+var TMImages = document.querySelectorAll("#tm-gallery img");
+
+// Function to open TM image popup
+function openTMPopup() {
+    document.getElementById("TMImagePopup").style.display = "flex";
+    document.getElementById("TMPopupContent").style.display = "block";
+    showTMSlide(currentTMImage)
+    document.body.classList.add('no-scroll');
+}
+
+// Function to close TM image popup
+function closeTMPopup() {
+    document.getElementById("TMImagePopup").style.display = "none";
+    document.getElementById("TMPopupContent").style.display = "none";
+    document.body.classList.remove('no-scroll');
+}
+
+// Function to show a specific VenusHacks image
+function showTMSlide(index) {
+    TMImages.forEach((img, i) => {
+        if (i === index) {
+            img.style.display = "block";
+        } else {
+            img.style.display = "none";
+        }
+    });
+}
+
+// Function to show the previous TM image
+function prevTMImage() {
+    currentTMImage = (currentTMImage - 1 + TMImages.length) % TMImages.length;
+    showTMSlide(currentTMImage);
+}
+
+// Function to show the next TM image
+function nextTMImage() {
+    currentTMImage = (currentTMImage + 1) % TMImages.length;
+    showTMSlide(currentTMImage);
+}

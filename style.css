@@ -419,7 +419,9 @@ li a:hover {
     color: #284584b0;
 }
  
-#tkd-gallery {
+#tkd-gallery,
+#vh-gallery,
+#tm-gallery {
     width: 90%;
     position: relative;
     padding-left: 0;
@@ -429,29 +431,14 @@ li a:hover {
     justify-content: center;
 }
 
-#tkd-gallery img {
+#tkd-gallery img,
+#vh-gallery img,
+#tm-gallery img {
     display: block;  
     margin: auto; 
     width: 85%;
     border: 6px solid rgba(255, 255, 255, 0.884);
-}
-
-#vh-gallery {
-    width: 90%;
-    position: relative;
-    padding-left: 0;
-    padding-right: 0;
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-}
-
-#vh-gallery img {
-    display: block;  
-    margin: auto; 
-    width: 85%;
-    border: 6px solid rgba(255, 255, 255, 0.884);
-}
+} 
 
 .prev, .next {
     position: absolute;

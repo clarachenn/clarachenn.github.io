@@ -222,7 +222,20 @@
                         speaking experience for all members.</p>
                 </div>
                 <div class="ec-image">
-                    <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/toastmasters.png" class="responsive-image" alt="Gavel Club Image">
+                    <img src="https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/toastmasters.png" class="responsive-image" onclick="openTMPopup()" alt="Gavel Club Image">
+                </div>
+            </div>
+            
+            <div class="popup" id="TMImagePopup">
+                <div class="popup-content" id="TMPopupContent">
+                    <span class="popup-close" onclick="closeTMPopup()">&times;</span>
+                    <div id="tm-gallery">
+                        <img src="images/toastmasters.png" width="600" alt="Gavel Club Image">
+                        <img src="images/tm-contest.png" width="600" alt="Gavel Club Speech Contest 2019">
+                        <img src="images/tm-certificate.png" width="600" alt="Gavel Club Speech Contest Certificate">
+                        <button class="prev" onclick="prevTMImage()">❮</button>
+                        <button class="next" onclick="nextTMImage()">❯</button>
+                    </div>
                 </div>
             </div>
         </div>
