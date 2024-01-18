@@ -179,12 +179,12 @@ li a:hover {
     color: rgba(20, 41, 85, 0.747);
 }
 
-
-.education-container {
+.education-container,
+.experience-container,
+.ec-container {
     box-sizing: border-box;
-    background-color: #a4c4cb9e;
     border-radius: 50px;
-    width: 100%;
+    width: auto;
     height: auto;
     padding: 30px;
     margin: 60px 0;
@@ -192,24 +192,54 @@ li a:hover {
     overflow: hidden;
 }
 
-.education-panel {
+.education-container {
+    background-color: #a4c4cb9e;
+}
+
+.experience-container {
+    background-color: #e1b73b3d;
+}
+
+.ec-container {
+    background-color: #39b8d534;
+}
+
+.education-panel,
+.experience-panel,
+.ec-panel {
     border-radius: 50px;
-    width: 90%;
+    width: auto;
     height: auto;
     padding: 30px;
     margin: 20px;
-    background-color: #56a1c638;
     text-align: left;
 }
 
-.education-panel h3 {
+.education-panel {
+    background-color: #56a1c638;
+}
+
+.experience-panel {
+    background-color: #e4ae182b;
+}
+
+.ec-panel {
+    background-color: #108da322;
+    display: flex;
+    align-items: center;
+}
+
+.education-panel h3,
+.experience-panel h3,
+.ec-panel h3 {
     color: rgb(58, 79, 126);
     font-size: 18pt;
     margin-top: 10px;
     margin-bottom: 4px;
 }
 
-.education-panel p {
+.education-panel p,
+.experience-panel p {
     color: rgb(58, 79, 126);
     margin: 50px;
     margin-top: 16px;
@@ -217,7 +247,8 @@ li a:hover {
     font-size: 15pt;
 }
 
-.education-panel h4 {
+.education-panel h4,
+.experience-panel h4 {
     color: rgb(58, 79, 126);
     font-size: 12pt;
     font-style: italic;
@@ -263,50 +294,6 @@ li a:hover {
     opacity: .6;
  }
 
-.experience-container {
-    box-sizing: border-box;
-    background-color: #e1b73b3d;
-    border-radius: 50px;
-    width: auto;
-    height: auto;
-    padding: 30px;
-    margin: 60px 0;
-    justify-content: space-around;
-    overflow: hidden;
-}
-
-.experience-panel {
-    border-radius: 50px;
-    width: auto;
-    height: auto;
-    padding: 30px;
-    margin: 20px;
-    background-color: #e4ae182b;
-    text-align: left;
-}
-
-.experience-panel h3 {
-    color: rgb(58, 79, 126);
-    font-size: 18pt;
-    margin-top: 10px;
-    margin-bottom: 4px;
-}
-
-.experience-panel h4 {
-    color: rgb(58, 79, 126);
-    font-size: 12pt;
-    font-style: italic;
-    margin:0;
-}
-
-.experience-panel p {
-    color: rgb(58, 79, 126);
-    margin: 50px;
-    margin-top: 16px;
-    margin-bottom: 0px;
-    font-size: 15pt;
-}
-
 .dbh-logo {
     float: right;
     margin-top: -20px; 
@@ -329,30 +316,7 @@ li a:hover {
     width: 80px; 
     height: auto; 
     opacity: .6;
- }
-
-.ec-container {
-    box-sizing: border-box;
-    background-color: #39b8d534;
-    border-radius: 50px;
-    width: auto;
-    height: auto;
-    padding: 30px;
-    margin-top: 60px;
-    justify-content: space-around;
-    overflow: hidden;
-}
-
-.ec-panel {
-    border-radius: 50px;
-    width: auto;
-    height: auto;
-    padding: 30px;
-    margin: 20px;
-    background-color: #108da322;
-    display: flex;
-    align-items: center;
-}
+ } 
 
 .ec-text {
     padding-right: 10px;
@@ -651,8 +615,9 @@ li a:hover {
 
 .typewriter-container {
     text-align: center;
+    align-items: center;
     height: 80px;
-    width: auto;
+    width: 80%;
     margin-top: 40px;
     padding-top: 0;
 }
