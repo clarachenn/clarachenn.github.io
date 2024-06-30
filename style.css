@@ -136,18 +136,22 @@ li a:hover {
 }
 
 .project-panel:nth-child(1)::before {
-    background-image: url("https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/zotrater.png");
+    background-image: url("images/QuickSearch.png");
 }
 
 .project-panel:nth-child(2)::before {
-    background-image: url("images/personal.png");
+    background-image: url("images/sleepTracker.png");
 }
 
 .project-panel:nth-child(3)::before {
-    background-image: url("images/mv.png");
+    background-image: url("https://raw.githubusercontent.com/clarachenn/clarachenn.github.io/main/images/zotrater.png");
 }
 
 .project-panel:nth-child(4)::before {
+    background-image: url("images/mv.png");
+}
+
+.project-panel:nth-child(5)::before {
     background-image: url("images/corn-maze.png");
 }
 
